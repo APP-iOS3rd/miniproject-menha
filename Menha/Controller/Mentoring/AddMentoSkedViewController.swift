@@ -1,24 +1,21 @@
 //
-//  LoginViewController.swift
+//  AddMentoSkedViewController.swift
 //  Menha
 //
-//  Created by SeokkiKwon on 11/22/23.
+//  Created by SeokkiKwon on 11/23/23.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class AddMentoSkedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnPressed(_ sender: Any) {
-        print(1)
-    }
-    
+
     /*
     // MARK: - Navigation
 
