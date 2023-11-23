@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1634E5793AEF7CF480ED1B28 /* Pods_Menha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181C9AD1BB12EBE39E530A59 /* Pods_Menha.framework */; };
+		8231A4B22B0E567700EA3C9D /* Mentoring.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8231A4B12B0E567700EA3C9D /* Mentoring.storyboard */; };
+		8231A4B42B0E56EB00EA3C9D /* MentoSkedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231A4B32B0E56EB00EA3C9D /* MentoSkedViewController.swift */; };
+		8231A4B62B0E57AF00EA3C9D /* MentiSkedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231A4B52B0E57AF00EA3C9D /* MentiSkedViewController.swift */; };
+		8231A4B82B0E5BAF00EA3C9D /* MentoSkedManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231A4B72B0E5BAF00EA3C9D /* MentoSkedManageViewController.swift */; };
+		8231A4BA2B0E5C3000EA3C9D /* AddMentoSkedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231A4B92B0E5C3000EA3C9D /* AddMentoSkedViewController.swift */; };
+		8231A4BC2B0E5D5D00EA3C9D /* MentiSkedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231A4BB2B0E5D5D00EA3C9D /* MentiSkedDetailViewController.swift */; };
+		8231A4BE2B0E5DD000EA3C9D /* AddInviteCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231A4BD2B0E5DD000EA3C9D /* AddInviteCodeViewController.swift */; };
+		8231A4C02B0E5EAE00EA3C9D /* InviteCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231A4BF2B0E5EAE00EA3C9D /* InviteCodeViewController.swift */; };
 		82601FD02B0D01500074EEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82601FCF2B0D01500074EEE7 /* AppDelegate.swift */; };
 		82601FD22B0D01500074EEE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82601FD12B0D01500074EEE7 /* SceneDelegate.swift */; };
 		82601FD42B0D01500074EEE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82601FD32B0D01500074EEE7 /* ViewController.swift */; };
@@ -15,9 +23,8 @@
 		82601FD92B0D01520074EEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82601FD82B0D01520074EEE7 /* Assets.xcassets */; };
 		82601FDC2B0D01520074EEE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82601FDA2B0D01520074EEE7 /* LaunchScreen.storyboard */; };
 		8267FAE12B0D1CC4001BEEAD /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267FAE02B0D1CC4001BEEAD /* TestModel.swift */; };
-		8267FAE32B0D1CE1001BEEAD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267FAE22B0D1CE1001BEEAD /* TestView.swift */; };
 		829E2BB32B0DFE670019075C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829E2BB22B0DFE660019075C /* LoginViewController.swift */; };
-		82AADD602B0E27500072E8F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82AADD5F2B0E27500072E8F5 /* GoogleService-Info.plist */; };
+		9D60D5FC2B0EFD7D0065D8C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D60D5FB2B0EFD7D0065D8C3 /* GoogleService-Info.plist */; };
 		9DBC651F2B0DF2A3004AF6A2 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC651E2B0DF2A3004AF6A2 /* LoginScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +32,14 @@
 		181C9AD1BB12EBE39E530A59 /* Pods_Menha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Menha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2920B4214F0F6EF27B878EB3 /* Pods-Menha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menha.debug.xcconfig"; path = "Target Support Files/Pods-Menha/Pods-Menha.debug.xcconfig"; sourceTree = "<group>"; };
 		4315DBDA5DEE5B2E49CA76B5 /* Pods-Menha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menha.release.xcconfig"; path = "Target Support Files/Pods-Menha/Pods-Menha.release.xcconfig"; sourceTree = "<group>"; };
+		8231A4B12B0E567700EA3C9D /* Mentoring.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mentoring.storyboard; sourceTree = "<group>"; };
+		8231A4B32B0E56EB00EA3C9D /* MentoSkedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoSkedViewController.swift; sourceTree = "<group>"; };
+		8231A4B52B0E57AF00EA3C9D /* MentiSkedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentiSkedViewController.swift; sourceTree = "<group>"; };
+		8231A4B72B0E5BAF00EA3C9D /* MentoSkedManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoSkedManageViewController.swift; sourceTree = "<group>"; };
+		8231A4B92B0E5C3000EA3C9D /* AddMentoSkedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMentoSkedViewController.swift; sourceTree = "<group>"; };
+		8231A4BB2B0E5D5D00EA3C9D /* MentiSkedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentiSkedDetailViewController.swift; sourceTree = "<group>"; };
+		8231A4BD2B0E5DD000EA3C9D /* AddInviteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInviteCodeViewController.swift; sourceTree = "<group>"; };
+		8231A4BF2B0E5EAE00EA3C9D /* InviteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCodeViewController.swift; sourceTree = "<group>"; };
 		82601FCC2B0D01500074EEE7 /* Menha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82601FCF2B0D01500074EEE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82601FD12B0D01500074EEE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,9 +49,8 @@
 		82601FDB2B0D01520074EEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82601FDD2B0D01520074EEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8267FAE02B0D1CC4001BEEAD /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
-		8267FAE22B0D1CE1001BEEAD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		829E2BB22B0DFE660019075C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		82AADD5F2B0E27500072E8F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D60D5FB2B0EFD7D0065D8C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9DBC651E2B0DF2A3004AF6A2 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,9 +66,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8231A4AE2B0E55B500EA3C9D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8231A4B02B0E560A00EA3C9D /* Mentoring */ = {
+			isa = PBXGroup;
+			children = (
+				8231A4B12B0E567700EA3C9D /* Mentoring.storyboard */,
+				8231A4B92B0E5C3000EA3C9D /* AddMentoSkedViewController.swift */,
+				8231A4B72B0E5BAF00EA3C9D /* MentoSkedManageViewController.swift */,
+				8231A4BB2B0E5D5D00EA3C9D /* MentiSkedDetailViewController.swift */,
+				8231A4B32B0E56EB00EA3C9D /* MentoSkedViewController.swift */,
+				8231A4B52B0E57AF00EA3C9D /* MentiSkedViewController.swift */,
+				8231A4BD2B0E5DD000EA3C9D /* AddInviteCodeViewController.swift */,
+				8231A4BF2B0E5EAE00EA3C9D /* InviteCodeViewController.swift */,
+			);
+			path = Mentoring;
+			sourceTree = "<group>";
+		};
+		8231A4C12B0E650000EA3C9D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				82601FD32B0D01500074EEE7 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		82601FC32B0D01500074EEE7 = {
 			isa = PBXGroup;
 			children = (
+				9D60D5FB2B0EFD7D0065D8C3 /* GoogleService-Info.plist */,
 				82601FCE2B0D01500074EEE7 /* Menha */,
 				82601FCD2B0D01500074EEE7 /* Products */,
 				AC43A471107AB7F1E84DF949 /* Pods */,
@@ -73,10 +118,11 @@
 		82601FCE2B0D01500074EEE7 /* Menha */ = {
 			isa = PBXGroup;
 			children = (
+				8231A4AE2B0E55B500EA3C9D /* Storyboard */,
 				8267FADF2B0D1BCF001BEEAD /* Others */,
 				8267FADC2B0D1B9F001BEEAD /* Model */,
-				8267FADB2B0D1B94001BEEAD /* View */,
-				8267FADD2B0D1BAB001BEEAD /* Controller */,
+				8267FADB2B0D1B94001BEEAD /* Controller */,
+				8267FADD2B0D1BAB001BEEAD /* View */,
 				82601FD52B0D01510074EEE7 /* Main.storyboard */,
 				82601FD82B0D01520074EEE7 /* Assets.xcassets */,
 				82601FDA2B0D01520074EEE7 /* LaunchScreen.storyboard */,
@@ -85,13 +131,14 @@
 			path = Menha;
 			sourceTree = "<group>";
 		};
-		8267FADB2B0D1B94001BEEAD /* View */ = {
+		8267FADB2B0D1B94001BEEAD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8231A4C12B0E650000EA3C9D /* Main */,
+				8231A4B02B0E560A00EA3C9D /* Mentoring */,
 				9DBC651D2B0DF271004AF6A2 /* Login */,
-				8267FAE22B0D1CE1001BEEAD /* TestView.swift */,
 			);
-			path = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8267FADC2B0D1B9F001BEEAD /* Model */ = {
@@ -102,18 +149,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8267FADD2B0D1BAB001BEEAD /* Controller */ = {
+		8267FADD2B0D1BAB001BEEAD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				82601FD32B0D01500074EEE7 /* ViewController.swift */,
 			);
-			path = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
 		8267FADF2B0D1BCF001BEEAD /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				82AADD5F2B0E27500072E8F5 /* GoogleService-Info.plist */,
 				82601FCF2B0D01500074EEE7 /* AppDelegate.swift */,
 				82601FD12B0D01500074EEE7 /* SceneDelegate.swift */,
 			);
@@ -208,9 +253,10 @@
 			files = (
 				82601FDC2B0D01520074EEE7 /* LaunchScreen.storyboard in Resources */,
 				82601FD92B0D01520074EEE7 /* Assets.xcassets in Resources */,
-				82AADD602B0E27500072E8F5 /* GoogleService-Info.plist in Resources */,
+				8231A4B22B0E567700EA3C9D /* Mentoring.storyboard in Resources */,
 				9DBC651F2B0DF2A3004AF6A2 /* LoginScreen.storyboard in Resources */,
 				82601FD72B0D01510074EEE7 /* Main.storyboard in Resources */,
+				9D60D5FC2B0EFD7D0065D8C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,11 +309,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8231A4BC2B0E5D5D00EA3C9D /* MentiSkedDetailViewController.swift in Sources */,
+				8231A4B82B0E5BAF00EA3C9D /* MentoSkedManageViewController.swift in Sources */,
+				8231A4C02B0E5EAE00EA3C9D /* InviteCodeViewController.swift in Sources */,
 				829E2BB32B0DFE670019075C /* LoginViewController.swift in Sources */,
+				8231A4B62B0E57AF00EA3C9D /* MentiSkedViewController.swift in Sources */,
 				82601FD42B0D01500074EEE7 /* ViewController.swift in Sources */,
-				8267FAE32B0D1CE1001BEEAD /* TestView.swift in Sources */,
 				82601FD02B0D01500074EEE7 /* AppDelegate.swift in Sources */,
 				82601FD22B0D01500074EEE7 /* SceneDelegate.swift in Sources */,
+				8231A4BA2B0E5C3000EA3C9D /* AddMentoSkedViewController.swift in Sources */,
+				8231A4B42B0E56EB00EA3C9D /* MentoSkedViewController.swift in Sources */,
+				8231A4BE2B0E5DD000EA3C9D /* AddInviteCodeViewController.swift in Sources */,
 				8267FAE12B0D1CC4001BEEAD /* TestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

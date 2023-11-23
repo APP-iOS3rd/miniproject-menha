@@ -17,13 +17,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyG-iQ-w2O">
-                                <rect key="frame" x="159" y="409" width="75" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edS-t4-8rp">
+                                <rect key="frame" x="124" y="409" width="146" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="멘토스케줄로 이동"/>
                                 <connections>
-                                    <segue destination="BVd-dI-r6s" kind="show" id="shF-d7-j1h"/>
+                                    <segue destination="vFm-Jo-6ce" kind="show" identifier="" id="gjz-Fm-OKa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmp-Jf-a8v">
+                                <rect key="frame" x="123" y="526" width="146" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="멘티스케줄로 이동"/>
+                                <connections>
+                                    <segue destination="F1W-MU-9sE" kind="push" id="gbY-Al-EHY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyG-iQ-w2O">
+                                <rect key="frame" x="113" y="287" width="166" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그인 화면으로 이동"/>
+                                <connections>
+                                    <segue destination="BVd-dI-r6s" kind="show" identifier="" id="shF-d7-j1h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -36,15 +54,35 @@
             </objects>
             <point key="canvasLocation" x="1271" y="-56"/>
         </scene>
-        <!--LoginScreen-->
+        <!--LoginScreenAY-->
         <scene sceneID="Wb7-b4-dyN">
             <objects>
-                <viewControllerPlaceholder storyboardName="LoginScreen" id="BVd-dI-r6s" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="LoginScreen" referencedIdentifier="LoginScreenAY" id="BVd-dI-r6s" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zcb-yt-hk2"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF8-2R-6E6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="-56"/>
+            <point key="canvasLocation" x="2053" y="-201"/>
+        </scene>
+        <!--MentoSked-->
+        <scene sceneID="AWb-hE-iYR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mentoring" referencedIdentifier="MentoSked" id="vFm-Jo-6ce" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="840-pQ-Jdf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSS-4g-hSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053" y="-56"/>
+        </scene>
+        <!--MentiSked-->
+        <scene sceneID="NSe-dZ-7D3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mentoring" referencedIdentifier="MentiSked" id="F1W-MU-9sE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="w2p-x3-tRj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prc-yd-Pcv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2063" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AHM-H9-yaF">
