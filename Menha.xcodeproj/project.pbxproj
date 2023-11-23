@@ -12,19 +12,19 @@
 		7185BFA92B0F8DF200297230 /* AddMentiScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185BFA82B0F8DF200297230 /* AddMentiScheduleViewController.swift */; };
 		7185BFAB2B0F8F5400297230 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185BFAA2B0F8F5400297230 /* DetailViewController.swift */; };
 		7185BFAD2B0F90C400297230 /* ModifyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185BFAC2B0F90C400297230 /* ModifyScheduleViewController.swift */; };
-		8231A4B22B0E567700EA3C9D /* Mentoring.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8231A4B12B0E567700EA3C9D /* Mentoring.storyboard */; };
+		71B2D69B2B0FAE0A00E92F05 /* Main in Resources */ = {isa = PBXBuildFile; fileRef = 71B2D69A2B0FAE0A00E92F05 /* Main */; };
+		71B2D69D2B0FAE1400E92F05 /* Mentoring in Resources */ = {isa = PBXBuildFile; fileRef = 71B2D69C2B0FAE1400E92F05 /* Mentoring */; };
+		71B2D69F2B0FAE1800E92F05 /* Users in Resources */ = {isa = PBXBuildFile; fileRef = 71B2D69E2B0FAE1800E92F05 /* Users */; };
 		8231A4BA2B0E5C3000EA3C9D /* AddMentoScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231A4B92B0E5C3000EA3C9D /* AddMentoScheduleViewController.swift */; };
 		8231A4BE2B0E5DD000EA3C9D /* CreateInviteCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231A4BD2B0E5DD000EA3C9D /* CreateInviteCodeViewController.swift */; };
 		82601FD02B0D01500074EEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82601FCF2B0D01500074EEE7 /* AppDelegate.swift */; };
 		82601FD22B0D01500074EEE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82601FD12B0D01500074EEE7 /* SceneDelegate.swift */; };
 		82601FD42B0D01500074EEE7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82601FD32B0D01500074EEE7 /* MainViewController.swift */; };
-		82601FD72B0D01510074EEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82601FD52B0D01510074EEE7 /* Main.storyboard */; };
 		82601FD92B0D01520074EEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82601FD82B0D01520074EEE7 /* Assets.xcassets */; };
 		82601FDC2B0D01520074EEE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82601FDA2B0D01520074EEE7 /* LaunchScreen.storyboard */; };
 		8267FAE12B0D1CC4001BEEAD /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267FAE02B0D1CC4001BEEAD /* TestModel.swift */; };
 		829E2BB32B0DFE670019075C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829E2BB22B0DFE660019075C /* LoginViewController.swift */; };
 		9D60D5FE2B0F055E0065D8C3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60D5FD2B0F055E0065D8C3 /* RegisterViewController.swift */; };
-		9DBC651F2B0DF2A3004AF6A2 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC651E2B0DF2A3004AF6A2 /* LoginScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,21 +35,21 @@
 		7185BFA82B0F8DF200297230 /* AddMentiScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMentiScheduleViewController.swift; sourceTree = "<group>"; };
 		7185BFAA2B0F8F5400297230 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7185BFAC2B0F90C400297230 /* ModifyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyScheduleViewController.swift; sourceTree = "<group>"; };
-		8231A4B12B0E567700EA3C9D /* Mentoring.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mentoring.storyboard; sourceTree = "<group>"; };
+		71B2D69A2B0FAE0A00E92F05 /* Main */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Main; sourceTree = "<group>"; };
+		71B2D69C2B0FAE1400E92F05 /* Mentoring */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Mentoring; sourceTree = "<group>"; };
+		71B2D69E2B0FAE1800E92F05 /* Users */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Users; sourceTree = "<group>"; };
 		8231A4B92B0E5C3000EA3C9D /* AddMentoScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMentoScheduleViewController.swift; sourceTree = "<group>"; };
 		8231A4BD2B0E5DD000EA3C9D /* CreateInviteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateInviteCodeViewController.swift; sourceTree = "<group>"; };
 		82601FCC2B0D01500074EEE7 /* Menha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82601FCF2B0D01500074EEE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82601FD12B0D01500074EEE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		82601FD32B0D01500074EEE7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		82601FD62B0D01510074EEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82601FD82B0D01520074EEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82601FDB2B0D01520074EEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82601FDD2B0D01520074EEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8267FAE02B0D1CC4001BEEAD /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		829E2BB22B0DFE660019075C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D60D5FD2B0F055E0065D8C3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		9DBC651E2B0DF2A3004AF6A2 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +138,9 @@
 		8267FADD2B0D1BAB001BEEAD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				82601FD52B0D01510074EEE7 /* Main.storyboard */,
-				9DBC651E2B0DF2A3004AF6A2 /* LoginScreen.storyboard */,
-				8231A4B12B0E567700EA3C9D /* Mentoring.storyboard */,
+				71B2D69E2B0FAE1800E92F05 /* Users */,
+				71B2D69C2B0FAE1400E92F05 /* Mentoring */,
+				71B2D69A2B0FAE0A00E92F05 /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,11 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B2D69F2B0FAE1800E92F05 /* Users in Resources */,
+				71B2D69B2B0FAE0A00E92F05 /* Main in Resources */,
 				82601FDC2B0D01520074EEE7 /* LaunchScreen.storyboard in Resources */,
 				82601FD92B0D01520074EEE7 /* Assets.xcassets in Resources */,
-				8231A4B22B0E567700EA3C9D /* Mentoring.storyboard in Resources */,
-				9DBC651F2B0DF2A3004AF6A2 /* LoginScreen.storyboard in Resources */,
-				82601FD72B0D01510074EEE7 /* Main.storyboard in Resources */,
+				71B2D69D2B0FAE1400E92F05 /* Mentoring in Resources */,
 				7185BFA72B0F8A8400297230 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,14 +315,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		82601FD52B0D01510074EEE7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82601FD62B0D01510074EEE7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		82601FDA2B0D01520074EEE7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
