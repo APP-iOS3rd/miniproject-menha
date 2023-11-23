@@ -1,13 +1,13 @@
 //
-//  AddInviteCodeViewController.swift
+//  ModifyScheduleViewController.swift
 //  Menha
 //
-//  Created by SeokkiKwon on 11/23/23.
+//  Created by 이성현 on 2023/11/23.
 //
 
 import UIKit
 
-class AddInviteCodeViewController: UIViewController {
+class ModifyScheduleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
