@@ -25,6 +25,7 @@
 		8267FAE12B0D1CC4001BEEAD /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267FAE02B0D1CC4001BEEAD /* TestModel.swift */; };
 		829E2BB32B0DFE670019075C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829E2BB22B0DFE660019075C /* LoginViewController.swift */; };
 		9D60D5FC2B0EFD7D0065D8C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D60D5FB2B0EFD7D0065D8C3 /* GoogleService-Info.plist */; };
+		9D60D5FE2B0F055E0065D8C3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60D5FD2B0F055E0065D8C3 /* SignUpViewController.swift */; };
 		9DBC651F2B0DF2A3004AF6A2 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC651E2B0DF2A3004AF6A2 /* LoginScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		8267FAE02B0D1CC4001BEEAD /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		829E2BB22B0DFE660019075C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D60D5FB2B0EFD7D0065D8C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D60D5FD2B0F055E0065D8C3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9DBC651E2B0DF2A3004AF6A2 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 			children = (
 				9DBC651E2B0DF2A3004AF6A2 /* LoginScreen.storyboard */,
 				829E2BB22B0DFE660019075C /* LoginViewController.swift */,
+				9D60D5FD2B0F055E0065D8C3 /* SignUpViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				8231A4BA2B0E5C3000EA3C9D /* AddMentoSkedViewController.swift in Sources */,
 				8231A4B42B0E56EB00EA3C9D /* MentoSkedViewController.swift in Sources */,
 				8231A4BE2B0E5DD000EA3C9D /* AddInviteCodeViewController.swift in Sources */,
+				9D60D5FE2B0F055E0065D8C3 /* SignUpViewController.swift in Sources */,
 				8267FAE12B0D1CC4001BEEAD /* TestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
