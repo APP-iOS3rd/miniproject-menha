@@ -27,9 +27,14 @@
 		71C2A0892B0FC52B004ADFB9 /* ModifySchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */; };
 		71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08A2B0FC533004ADFB9 /* Login.storyboard */; };
 		71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08C2B0FC537004ADFB9 /* Register.storyboard */; };
+		820D721F2B0FC8A900254A5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */; };
+		99A969B11A6FB1AB8B5695DC /* Pods_MenHa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2857DF000C7867CB5117CBB1 /* Pods_MenHa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1590C5D759D9219071CFD72B /* Pods-MenHa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenHa.release.xcconfig"; path = "Target Support Files/Pods-MenHa/Pods-MenHa.release.xcconfig"; sourceTree = "<group>"; };
+		2857DF000C7867CB5117CBB1 /* Pods_MenHa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenHa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C76E6BCE2059976B6D96CA0 /* Pods-MenHa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenHa.debug.xcconfig"; path = "Target Support Files/Pods-MenHa/Pods-MenHa.debug.xcconfig"; sourceTree = "<group>"; };
 		71C2A0522B0FC336004ADFB9 /* MenHa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenHa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C2A0552B0FC336004ADFB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71C2A0572B0FC336004ADFB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModifySchedule.storyboard; sourceTree = "<group>"; };
 		71C2A08A2B0FC533004ADFB9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		71C2A08C2B0FC537004ADFB9 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A969B11A6FB1AB8B5695DC /* Pods_MenHa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +77,8 @@
 			children = (
 				71C2A0542B0FC336004ADFB9 /* MenHa */,
 				71C2A0532B0FC336004ADFB9 /* Products */,
+				7C4F105D22AD16A7CE55E63D /* Pods */,
+				87B21D31A08C5D21D0C63D07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +93,7 @@
 		71C2A0542B0FC336004ADFB9 /* MenHa */ = {
 			isa = PBXGroup;
 			children = (
-				71C2A06B2B0FC3D8004ADFB9 /* Model */,
+				820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */,
 				71C2A06A2B0FC3D3004ADFB9 /* View */,
 				71C2A0692B0FC3CB004ADFB9 /* ViewController */,
 				71C2A0552B0FC336004ADFB9 /* AppDelegate.swift */,
@@ -114,13 +123,6 @@
 				71C2A07F2B0FC4D3004ADFB9 /* Users */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		71C2A06B2B0FC3D8004ADFB9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		71C2A0762B0FC462004ADFB9 /* Main */ = {
@@ -181,6 +183,23 @@
 			path = Users;
 			sourceTree = "<group>";
 		};
+		7C4F105D22AD16A7CE55E63D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C76E6BCE2059976B6D96CA0 /* Pods-MenHa.debug.xcconfig */,
+				1590C5D759D9219071CFD72B /* Pods-MenHa.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		87B21D31A08C5D21D0C63D07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2857DF000C7867CB5117CBB1 /* Pods_MenHa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71C2A0662B0FC337004ADFB9 /* Build configuration list for PBXNativeTarget "MenHa" */;
 			buildPhases = (
+				252E077D5F955A5EE2298BE3 /* [CP] Check Pods Manifest.lock */,
 				71C2A04E2B0FC336004ADFB9 /* Sources */,
 				71C2A04F2B0FC336004ADFB9 /* Frameworks */,
 				71C2A0502B0FC336004ADFB9 /* Resources */,
+				B5D1C20C756729018DC38D62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,12 +268,55 @@
 				71C2A0892B0FC52B004ADFB9 /* ModifySchedule.storyboard in Resources */,
 				71C2A05F2B0FC337004ADFB9 /* Assets.xcassets in Resources */,
 				71C2A05D2B0FC336004ADFB9 /* Main.storyboard in Resources */,
+				820D721F2B0FC8A900254A5A /* GoogleService-Info.plist in Resources */,
 				71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */,
 				71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		252E077D5F955A5EE2298BE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MenHa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D1C20C756729018DC38D62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MenHa/Pods-MenHa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MenHa/Pods-MenHa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MenHa/Pods-MenHa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71C2A04E2B0FC336004ADFB9 /* Sources */ = {
@@ -331,7 +395,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -394,7 +458,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -415,12 +479,13 @@
 		};
 		71C2A0672B0FC337004ADFB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C76E6BCE2059976B6D96CA0 /* Pods-MenHa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J3XZ67KDFK;
+				DEVELOPMENT_TEAM = SQDR264Q5Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MenHa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -433,7 +498,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Seonghyeon.MenHa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.MenHa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -443,12 +508,13 @@
 		};
 		71C2A0682B0FC337004ADFB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1590C5D759D9219071CFD72B /* Pods-MenHa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J3XZ67KDFK;
+				DEVELOPMENT_TEAM = SQDR264Q5Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MenHa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -461,7 +527,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Seonghyeon.MenHa;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.MenHa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
