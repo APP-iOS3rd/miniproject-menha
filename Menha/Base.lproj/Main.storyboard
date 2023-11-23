@@ -41,7 +41,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그인 화면으로 이동"/>
                                 <connections>
-                                    <segue destination="BVd-dI-r6s" kind="show" id="shF-d7-j1h"/>
+                                    <segue destination="BVd-dI-r6s" kind="show" identifier="" id="shF-d7-j1h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="1271" y="-56"/>
         </scene>
-        <!--LoginScreen-->
+        <!--LoginScreenAY-->
         <scene sceneID="Wb7-b4-dyN">
             <objects>
-                <viewControllerPlaceholder storyboardName="LoginScreen" id="BVd-dI-r6s" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="LoginScreen" referencedIdentifier="LoginScreenAY" id="BVd-dI-r6s" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zcb-yt-hk2"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF8-2R-6E6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

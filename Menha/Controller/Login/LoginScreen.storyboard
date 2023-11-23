@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Menha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScreenAY" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Menha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,14 +39,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k44-aZ-fv6">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="LoginScreen" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k44-aZ-fv6">
                                 <rect key="frame" x="155" y="315" width="83" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
                                 <connections>
-                                    <action selector="btnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="n5q-rY-kgH"/>
-                                    <segue destination="Qv7-Li-cEh" kind="show" id="DIb-ey-7a9"/>
+                                    <action selector="createNewUser:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JZR-A4-8l2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zx-ft-h7u">
@@ -71,6 +70,10 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZTb-EH-BtV" secondAttribute="trailing" constant="32" id="wHO-F1-MGM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Useremail" destination="ZTb-EH-BtV" id="qCI-ST-efk"/>
+                        <outlet property="Userpassword" destination="6DO-bJ-L8l" id="aBm-DI-rog"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +84,7 @@
             <objects>
                 <viewController id="Qv7-Li-cEh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I1g-6K-NIF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoV-49-gaj">
@@ -185,7 +188,7 @@
     </scenes>
     <resources>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

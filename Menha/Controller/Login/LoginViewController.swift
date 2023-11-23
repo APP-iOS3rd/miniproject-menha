@@ -6,17 +6,29 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet var Userpassword: UITextField!
+    @IBOutlet var Useremail: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
    
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnPressed(_ sender: Any) {
-        
+    @IBAction func createNewUser(_ sender: Any) {
+        var email : String = Useremail.text ?? ""
+        var password : String = Userpassword.text ?? ""
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let error = error {
+                print("failed becasue of \(error)")
+                return
+            } else {
+                print("user added")
+            }
+        }
     }
     
     /*
