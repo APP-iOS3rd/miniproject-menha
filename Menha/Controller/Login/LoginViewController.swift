@@ -18,16 +18,14 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func createNewUser(_ sender: Any) {
+
+    @IBAction func UserLogin(_ sender: Any) {
         var email : String = Useremail.text ?? ""
         var password : String = Userpassword.text ?? ""
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            if let error = error {
-                print("failed becasue of \(error)")
-                return
-            } else {
-                print("user added")
-            }
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if user != nil {
+                print("login success")
+            }else{ print("login fail")}
         }
     }
     

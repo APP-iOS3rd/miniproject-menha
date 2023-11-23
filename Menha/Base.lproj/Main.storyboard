@@ -57,7 +57,7 @@
         <!--LoginScreenAY-->
         <scene sceneID="Wb7-b4-dyN">
             <objects>
-                <viewControllerPlaceholder storyboardName="LoginScreen" referencedIdentifier="LoginScreenAY" id="BVd-dI-r6s" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="LoginScreen" storyboardName="LoginScreen" referencedIdentifier="LoginScreenAY" id="BVd-dI-r6s" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zcb-yt-hk2"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF8-2R-6E6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
