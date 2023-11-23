@@ -1,13 +1,13 @@
 //
-//  AddMentoSkedViewController.swift
+//  MentoDetailViewController.swift
 //  Menha
 //
-//  Created by SeokkiKwon on 11/23/23.
+//  Created by 이성현 on 2023/11/23.
 //
 
 import UIKit
 
-class AddMentoSkedViewController: UIViewController {
+class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
