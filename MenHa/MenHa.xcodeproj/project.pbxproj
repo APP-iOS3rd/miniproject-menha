@@ -27,8 +27,8 @@
 		71C2A0892B0FC52B004ADFB9 /* ModifySchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */; };
 		71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08A2B0FC533004ADFB9 /* Login.storyboard */; };
 		71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08C2B0FC537004ADFB9 /* Register.storyboard */; };
-		820D721F2B0FC8A900254A5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */; };
 		99A969B11A6FB1AB8B5695DC /* Pods_MenHa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2857DF000C7867CB5117CBB1 /* Pods_MenHa.framework */; };
+		9D60D6952B10AE980065D8C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D60D6942B10AE980065D8C3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +57,7 @@
 		71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModifySchedule.storyboard; sourceTree = "<group>"; };
 		71C2A08A2B0FC533004ADFB9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		71C2A08C2B0FC537004ADFB9 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
-		820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D60D6942B10AE980065D8C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 		71C2A0542B0FC336004ADFB9 /* MenHa */ = {
 			isa = PBXGroup;
 			children = (
-				820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */,
+				9D60D6942B10AE980065D8C3 /* GoogleService-Info.plist */,
 				71C2A06A2B0FC3D3004ADFB9 /* View */,
 				71C2A0692B0FC3CB004ADFB9 /* ViewController */,
 				71C2A0552B0FC336004ADFB9 /* AppDelegate.swift */,
@@ -268,7 +268,7 @@
 				71C2A0892B0FC52B004ADFB9 /* ModifySchedule.storyboard in Resources */,
 				71C2A05F2B0FC337004ADFB9 /* Assets.xcassets in Resources */,
 				71C2A05D2B0FC336004ADFB9 /* Main.storyboard in Resources */,
-				820D721F2B0FC8A900254A5A /* GoogleService-Info.plist in Resources */,
+				9D60D6952B10AE980065D8C3 /* GoogleService-Info.plist in Resources */,
 				71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */,
 				71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */,
 			);
@@ -485,7 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SQDR264Q5Q;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MenHa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -493,6 +493,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,7 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SQDR264Q5Q;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MenHa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -522,6 +523,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
