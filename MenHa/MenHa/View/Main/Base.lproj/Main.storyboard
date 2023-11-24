@@ -16,13 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZF-hE-bTT">
-                                <rect key="frame" x="159" y="409" width="75" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTY-rP-ndM">
+                                <rect key="frame" x="170" y="399" width="54" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="멘토"/>
                                 <connections>
-                                    <action selector="testBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5I-tA-OFH"/>
+                                    <action selector="goMentoScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9V6-vA-PMG"/>
+                                    <action selector="goMentoScreen:" destination="bfi-oS-oBx" eventType="touchUpInside" id="Gtm-k0-4Nh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGP-rV-oqa">
+                                <rect key="frame" x="170" y="540" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="멘티"/>
+                                <connections>
+                                    <action selector="goMenteeScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VWm-TS-haD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTk-cp-oDk">
+                                <rect key="frame" x="162" y="266" width="69" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그인"/>
+                                <connections>
+                                    <action selector="goLoginScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7wx-aU-xBI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,6 +51,7 @@
                     <navigationItem key="navigationItem" id="rmn-GX-JGA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="bfi-oS-oBx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1057.2519083969464" y="-6.3380281690140849"/>
         </scene>

@@ -15,7 +15,17 @@ class AddMentoScheduleViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addSchedule(_ sender: Any) {
+        let secondStoryboard = UIStoryboard(name: "CreateCode", bundle: nil)
+         
+        // Instantiate the desired view controller from the second storyboard
+        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: "CreateInvieteCodeViewController") as? CreateInvieteCodeViewController {
+            
+            // Perform the navigation
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
