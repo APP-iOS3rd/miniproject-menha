@@ -47,8 +47,9 @@ class RegisterViewController : UIViewController {
                 print("user added")
             }
         }
-        let pushvc = self.storyboard?.instantiateViewController(withIdentifier: "LoginScreenAY")
-        self.navigationController?.pushViewController(pushvc!, animated: true)
+        let test = UIStoryboard.init(name: "Main", bundle: nil)
+        guard let vc = test.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else{return}
+        self.navigationController?.pushViewController(vc, animated: true)
 
     }
     @IBAction func IAmMentor(_ sender: Any) {
