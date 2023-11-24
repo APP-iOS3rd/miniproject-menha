@@ -66,7 +66,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func moveToRegisterView(_ sender: Any) {
-        let test = UIStoryboard.init(name: "RegisterViewController", bundle: nil)
+        let test = UIStoryboard.init(name: "Register", bundle: nil)
         guard let vc = test.instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController else{return}
         self.navigationController?.pushViewController(vc, animated: true)
     }
