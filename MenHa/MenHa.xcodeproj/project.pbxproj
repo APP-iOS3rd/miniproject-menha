@@ -107,7 +107,10 @@
 		71C2A0542B0FC336004ADFB9 /* MenHa */ = {
 			isa = PBXGroup;
 			children = (
+
 				7123DB542B13611600147344 /* GoogleService-Info.plist */,
+
+				820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */,
 				827397322B10C5B20033EC5D /* Model */,
 				8273972F2B10AB450033EC5D /* Others */,
 				71C2A06A2B0FC3D3004ADFB9 /* View */,

@@ -7,11 +7,7 @@
 
 import Foundation
 
-struct SCREEN_NAME {
-    struct LOGIN {
-        static let storyBoardName = "Login"
-        static let viewControllerIdentifier = "LoginViewController"
-    }
-    
-   
+enum Login: String {
+    case name = "Login"
+    case vc = "LoginViewController"
 }
