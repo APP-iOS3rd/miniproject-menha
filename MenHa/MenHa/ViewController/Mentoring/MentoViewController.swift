@@ -47,4 +47,16 @@ class MentoViewController: UIViewController {
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
     }
+    
+    @IBAction func goMentoDetail(_ sender: Any) {
+        let secondStoryboard = UIStoryboard(name: "MentoDetail", bundle: nil)
+        
+        // Instantiate the desired view controller from the second storyboard
+        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: "AddMentoScheduleViewController") as? AddMentoScheduleViewController {
+            
+            // Perform the navigation
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        }
+    }
+    
 }
