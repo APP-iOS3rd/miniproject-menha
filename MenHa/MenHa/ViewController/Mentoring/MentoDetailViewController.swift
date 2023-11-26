@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class MentoDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

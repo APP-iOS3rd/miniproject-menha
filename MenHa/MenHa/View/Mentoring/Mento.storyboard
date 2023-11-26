@@ -16,27 +16,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFV-jb-JAR">
-                                <rect key="frame" x="159" y="164" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="goMentoSchedule:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JUk-FP-N9x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-Jm-2Cw">
-                                <rect key="frame" x="322" y="762" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-Jm-2Cw">
+                                <rect key="frame" x="333" y="758" width="35" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="+"/>
                                 <connections>
                                     <action selector="goAddSchedule:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BlE-Zy-spW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인상태-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3H0-db-Vbq" userLabel="로그인 상태">
+                                <rect key="frame" x="25.000000000000007" y="79" width="119.66666666666669" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 멘토링" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dn2-km-yw5" userLabel="제목">
+                                <rect key="frame" x="25" y="124" width="91" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bBB-qY-3oq">
+                                <rect key="frame" x="25" y="163" width="343" height="32"/>
+                                <segments>
+                                    <segment title="전체"/>
+                                    <segment title="개인"/>
+                                    <segment title="그룹"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3일 뒤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSU-i0-yAp" userLabel="일정">
+                                <rect key="frame" x="25" y="214" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gk-uX-2H1">
+                                <rect key="frame" x="304" y="334" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="수정"/>
+                                <connections>
+                                    <action selector="goMentoDetail:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HQK-jj-L7F"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="멘토" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqu-cH-nsX" userLabel="멘토멘티여부">
+                                <rect key="frame" x="154.66666666666666" y="79" width="43.333333333333343" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dn2-km-yw5" firstAttribute="top" secondItem="3H0-db-Vbq" secondAttribute="bottom" constant="15" id="39L-1L-4sp"/>
+                            <constraint firstItem="LSU-i0-yAp" firstAttribute="leading" secondItem="3H0-db-Vbq" secondAttribute="leading" id="BJP-cb-UPK"/>
+                            <constraint firstItem="3H0-db-Vbq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="BoY-ca-Qmr"/>
+                            <constraint firstItem="bBB-qY-3oq" firstAttribute="top" secondItem="dn2-km-yw5" secondAttribute="bottom" constant="15" id="IHJ-6e-32y"/>
+                            <constraint firstItem="LSU-i0-yAp" firstAttribute="top" secondItem="bBB-qY-3oq" secondAttribute="bottom" constant="20" id="Pyg-EY-B3x"/>
+                            <constraint firstItem="dn2-km-yw5" firstAttribute="leading" secondItem="3H0-db-Vbq" secondAttribute="leading" id="Uki-nF-Cxq"/>
+                            <constraint firstItem="bBB-qY-3oq" firstAttribute="leading" secondItem="3H0-db-Vbq" secondAttribute="leading" id="YXN-Oj-DhJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bBB-qY-3oq" secondAttribute="trailing" constant="25" id="coc-p2-lS8"/>
+                            <constraint firstItem="Cqu-cH-nsX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="ls7-on-gmI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PFa-Jm-2Cw" secondAttribute="bottom" constant="25" id="odG-bA-Dsj"/>
+                            <constraint firstItem="Cqu-cH-nsX" firstAttribute="leading" secondItem="3H0-db-Vbq" secondAttribute="trailing" constant="10" id="q7J-yS-nBa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PFa-Jm-2Cw" secondAttribute="trailing" constant="25" id="t3w-Mg-jQf"/>
+                            <constraint firstItem="3H0-db-Vbq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="w03-ch-gqW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
