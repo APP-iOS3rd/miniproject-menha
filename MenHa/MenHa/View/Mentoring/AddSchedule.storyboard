@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOe-UI-kjw">
-                                <rect key="frame" x="16" y="886" width="361" height="64"/>
+                                <rect key="frame" x="16" y="912" width="361" height="54"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="ZhE-ky-Mbk"/>
+                                    <constraint firstAttribute="height" constant="54" id="ZhE-ky-Mbk"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmQ-1L-73z">
-                                <rect key="frame" x="0.0" y="59" width="393" height="827"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="853"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqF-7g-2AJ">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
@@ -266,7 +266,7 @@
                             <constraint firstItem="DmQ-1L-73z" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="W8O-Be-WSe"/>
                             <constraint firstItem="IOe-UI-kjw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="WpC-Au-FNX"/>
                             <constraint firstItem="IOe-UI-kjw" firstAttribute="top" secondItem="DmQ-1L-73z" secondAttribute="bottom" id="dGy-rT-IcO"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="IOe-UI-kjw" secondAttribute="bottom" constant="16" id="mPJ-e2-Ncx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="IOe-UI-kjw" secondAttribute="bottom" id="mPJ-e2-Ncx"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DmQ-1L-73z" secondAttribute="trailing" id="tti-rX-1ZL"/>
                         </constraints>
                     </view>
