@@ -27,10 +27,10 @@ class MenteeViewController: UIViewController {
     */
 
     @IBAction func goMentoDetail(_ sender: Any) {
-        let secondStoryboard = UIStoryboard(name: "Detail", bundle: nil)
+        let secondStoryboard = UIStoryboard(name: "MentoDetail", bundle: nil)
         
         // Instantiate the desired view controller from the second storyboard
-        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
+        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: "MentoDetailViewController") as? MentoDetailViewController {
             
             // Perform the navigation
             self.navigationController?.pushViewController(secondViewController, animated: true)
