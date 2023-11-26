@@ -25,11 +25,11 @@ class MentoViewController: UIViewController {
     }
     */
 
-    @IBAction func goMentoSchedule(_ sender: Any) {
-        let secondStoryboard = UIStoryboard(name: "ModifySchedule", bundle: nil)
+    @IBAction func goScheduleModify(_ sender: Any) {
+        let secondStoryboard = UIStoryboard(name: Modify.name.rawValue, bundle: nil)
         
         // Instantiate the desired view controller from the second storyboard
-        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: "ModifyScheduleViewController") as? ModifyScheduleViewController {
+        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: Modify.id.rawValue) as? ModifyScheduleViewController {
             
             // Perform the navigation
             self.navigationController?.pushViewController(secondViewController, animated: true)
@@ -38,10 +38,10 @@ class MentoViewController: UIViewController {
     
     
     @IBAction func goAddSchedule(_ sender: Any) {
-        let secondStoryboard = UIStoryboard(name: "AddSchedule", bundle: nil)
+        let secondStoryboard = UIStoryboard(name: AddSchedule.name.rawValue, bundle: nil)
         
         // Instantiate the desired view controller from the second storyboard
-        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: "AddMentoScheduleViewController") as? AddMentoScheduleViewController {
+        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: AddSchedule.id.rawValue) as? AddMentoScheduleViewController {
             
             // Perform the navigation
             self.navigationController?.pushViewController(secondViewController, animated: true)
@@ -49,10 +49,10 @@ class MentoViewController: UIViewController {
     }
     
     @IBAction func goMentoDetail(_ sender: Any) {
-        let secondStoryboard = UIStoryboard(name: "MentoDetail", bundle: nil)
+        let secondStoryboard = UIStoryboard(name: MentoDetail.name.rawValue, bundle: nil)
         
         // Instantiate the desired view controller from the second storyboard
-        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: "MentoDetailViewController") as? MentoDetailViewController {
+        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: MentoDetail.id.rawValue) as? MentoDetailViewController {
             
             // Perform the navigation
             self.navigationController?.pushViewController(secondViewController, animated: true)
