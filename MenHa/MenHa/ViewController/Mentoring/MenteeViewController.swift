@@ -26,11 +26,11 @@ class MenteeViewController: UIViewController {
     }
     */
 
-    @IBAction func goMentoDetail(_ sender: Any) {
-        let secondStoryboard = UIStoryboard(name: "MentoDetail", bundle: nil)
+    @IBAction func goMenteeDetail(_ sender: Any) {
+        let secondStoryboard = UIStoryboard(name: MenteeDetail.name.rawValue, bundle: nil)
         
         // Instantiate the desired view controller from the second storyboard
-        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: "MentoDetailViewController") as? MentoDetailViewController {
+        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: MenteeDetail.id.rawValue) as? MenteeDetailViewController {
             
             // Perform the navigation
             self.navigationController?.pushViewController(secondViewController, animated: true)
@@ -39,10 +39,10 @@ class MenteeViewController: UIViewController {
     
     
     @IBAction func addCode(_ sender: Any) {
-        let secondStoryboard = UIStoryboard(name: "AddCode", bundle: nil)
+        let secondStoryboard = UIStoryboard(name: AddCode.name.rawValue, bundle: nil)
         
         // Instantiate the desired view controller from the second storyboard
-        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: "AddMentiScheduleViewController") as? AddMentiScheduleViewController {
+        if let secondViewController = secondStoryboard.instantiateViewController(withIdentifier: AddCode.id.rawValue) as? AddMentiScheduleViewController {
             
             // Perform the navigation
             self.navigationController?.pushViewController(secondViewController, animated: true)

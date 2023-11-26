@@ -47,8 +47,8 @@ class RegisterViewController : UIViewController {
                 print("user added")
             }
         }
-        let test = UIStoryboard.init(name: "Main", bundle: nil)
-        guard let vc = test.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else{return}
+        let test = UIStoryboard.init(name: Main.name.rawValue, bundle: nil)
+        guard let vc = test.instantiateViewController(withIdentifier: Main.id.rawValue) as? MainViewController else{return}
         self.navigationController?.pushViewController(vc, animated: true)
 
     }
