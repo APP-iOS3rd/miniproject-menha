@@ -23,8 +23,10 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func UserLogin(_ sender: Any) {
+        
         let email : String = Useremail.text ?? ""
         let password : String = Userpassword.text ?? ""
+        
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if user != nil {
                 print("login success")
@@ -71,7 +73,17 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    
+    @IBAction func checkIfLogin(_ sender: Any) {
+        let user = Auth.auth().currentUser
+        if let user = user {
+            // The user's ID, unique to the Firebase project.
+            // Do NOT use this value to authenticate with your backend server,
+            // if you have one. Use getTokenWithCompletion:completion: instead.
+            print(user.uid)
+        } else {
+            print("no user")
+        }
+    }
     /*
     // MARK: - Navigation
 

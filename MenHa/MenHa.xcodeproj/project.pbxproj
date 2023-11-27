@@ -27,13 +27,13 @@
 		71C2A0892B0FC52B004ADFB9 /* ModifySchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */; };
 		71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08A2B0FC533004ADFB9 /* Login.storyboard */; };
 		71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08C2B0FC537004ADFB9 /* Register.storyboard */; };
-		820D721F2B0FC8A900254A5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */; };
 		827397312B10AB580033EC5D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827397302B10AB580033EC5D /* Constants.swift */; };
 		827397342B10C7BD0033EC5D /* Mento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827397332B10C7BD0033EC5D /* Mento.storyboard */; };
 		827397362B10C7E90033EC5D /* MentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827397352B10C7E90033EC5D /* MentoViewController.swift */; };
 		827397382B10C8010033EC5D /* Mentee.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827397372B10C8010033EC5D /* Mentee.storyboard */; };
 		8273973A2B10C8120033EC5D /* MenteeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827397392B10C8120033EC5D /* MenteeViewController.swift */; };
 		99A969B11A6FB1AB8B5695DC /* Pods_MenHa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2857DF000C7867CB5117CBB1 /* Pods_MenHa.framework */; };
+		9D60D6972B10D55A0065D8C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D60D6962B10D55A0065D8C3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,12 +62,12 @@
 		71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModifySchedule.storyboard; sourceTree = "<group>"; };
 		71C2A08A2B0FC533004ADFB9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		71C2A08C2B0FC537004ADFB9 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
-		820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		827397302B10AB580033EC5D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		827397332B10C7BD0033EC5D /* Mento.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mento.storyboard; sourceTree = "<group>"; };
 		827397352B10C7E90033EC5D /* MentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoViewController.swift; sourceTree = "<group>"; };
 		827397372B10C8010033EC5D /* Mentee.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mentee.storyboard; sourceTree = "<group>"; };
 		827397392B10C8120033EC5D /* MenteeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeViewController.swift; sourceTree = "<group>"; };
+		9D60D6962B10D55A0065D8C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				827397322B10C5B20033EC5D /* Model */,
-				820D721E2B0FC8A900254A5A /* GoogleService-Info.plist */,
 				8273972F2B10AB450033EC5D /* Others */,
 				71C2A06A2B0FC3D3004ADFB9 /* View */,
 				71C2A0692B0FC3CB004ADFB9 /* ViewController */,
@@ -219,6 +218,7 @@
 		827397322B10C5B20033EC5D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9D60D6962B10D55A0065D8C3 /* GoogleService-Info.plist */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D60D6972B10D55A0065D8C3 /* GoogleService-Info.plist in Resources */,
 				71C2A0622B0FC337004ADFB9 /* LaunchScreen.storyboard in Resources */,
 				71C2A0812B0FC507004ADFB9 /* AddCode.storyboard in Resources */,
 				71C2A0832B0FC50E004ADFB9 /* AddSchedule.storyboard in Resources */,
@@ -301,7 +302,6 @@
 				827397342B10C7BD0033EC5D /* Mento.storyboard in Resources */,
 				71C2A05F2B0FC337004ADFB9 /* Assets.xcassets in Resources */,
 				71C2A05D2B0FC336004ADFB9 /* Main.storyboard in Resources */,
-				820D721F2B0FC8A900254A5A /* GoogleService-Info.plist in Resources */,
 				71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */,
 				71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */,
 			);
