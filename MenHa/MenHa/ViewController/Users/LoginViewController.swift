@@ -48,14 +48,14 @@ class LoginViewController: UIViewController {
                                 return
                             }
                             if checking == 1 {
-//                                let test = UIStoryboard.init(name: "Mentoring", bundle: nil)
-//                                guard let vc = test.instantiateViewController(withIdentifier: "MentoSked") as? MentoSkedViewController else{return}
-//                                self.navigationController?.pushViewController(vc, animated: true)
+                                let test = UIStoryboard.init(name: Mento.name.rawValue, bundle: nil)
+                                guard let vc = test.instantiateViewController(withIdentifier: Mento.id.rawValue) as? MentoViewController else{return}
+                                self.navigationController?.pushViewController(vc, animated: true)
                             }
                             if checking == 2 {
-//                                let test = UIStoryboard.init(name: "Mentoring", bundle: nil)
-//                                guard let vc = test.instantiateViewController(withIdentifier: "MentiSked") as? MentiSkedViewController else{return}
-//                                self.navigationController?.pushViewController(vc, animated: true)
+                                let test = UIStoryboard.init(name: Mentee.name.rawValue, bundle: nil)
+                                guard let vc = test.instantiateViewController(withIdentifier: Mentee.id.rawValue) as? MenteeViewController else{return}
+                                self.navigationController?.pushViewController(vc, animated: true)
                             }
                         }
                     }
