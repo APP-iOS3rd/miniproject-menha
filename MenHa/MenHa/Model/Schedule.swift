@@ -17,6 +17,3 @@ struct Schedule {
     var createuser:User
 }
 
-struct User {
-    var profileUrl: String
-}

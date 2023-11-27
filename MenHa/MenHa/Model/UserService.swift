@@ -10,7 +10,7 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class UserService {
-    let shared = UserService()
+    static let shared = UserService()
     var userId: String?
     var currentUser: User?
     let db = Firestore.firestore()

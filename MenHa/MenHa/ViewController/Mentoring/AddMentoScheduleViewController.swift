@@ -8,7 +8,7 @@
 import UIKit
 
 class AddMentoScheduleViewController: UIViewController {
-
+    let userService  = UserService()
     override func viewDidLoad() {
         super.viewDidLoad()
 
