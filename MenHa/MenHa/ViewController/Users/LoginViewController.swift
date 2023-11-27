@@ -23,8 +23,10 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func UserLogin(_ sender: Any) {
+        
         let email : String = Useremail.text ?? ""
         let password : String = Userpassword.text ?? ""
+        
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if user != nil {
                 print("login success")

@@ -48,7 +48,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
                                 <connections>
-                                    <action selector="moveToRegisterView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oYB-Hk-gqZ"/>
+                                    <action selector="moveToRegisterView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HAo-17-swa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YS-YH-TVe">
@@ -57,7 +57,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그인"/>
                                 <connections>
-                                    <action selector="UserLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dCN-gn-hnO"/>
+                                    <action selector="UserLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YCp-0Q-nBO"/>
                                 </connections>
                             </button>
                         </subviews>
