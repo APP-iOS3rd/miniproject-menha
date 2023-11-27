@@ -32,6 +32,7 @@
 		71C2A0892B0FC52B004ADFB9 /* ModifySchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */; };
 		71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08A2B0FC533004ADFB9 /* Login.storyboard */; };
 		71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08C2B0FC537004ADFB9 /* Register.storyboard */; };
+		76CE9F4B2B152FE800AA5F6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76CE9F4A2B152FE800AA5F6E /* GoogleService-Info.plist */; };
 		823202F02B14ABAF00179A3A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202EF2B14ABAF00179A3A /* Schedule.swift */; };
 		823202F42B14C15700179A3A /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */; };
 		823202F82B14C85A00179A3A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202F72B14C85A00179A3A /* DateHelper.swift */; };
@@ -75,6 +76,7 @@
 		71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModifySchedule.storyboard; sourceTree = "<group>"; };
 		71C2A08A2B0FC533004ADFB9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		71C2A08C2B0FC537004ADFB9 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		76CE9F4A2B152FE800AA5F6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		823202EF2B14ABAF00179A3A /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		823202F72B14C85A00179A3A /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				712D4F9B2B14D77200711831 /* GoogleService-Info.plist */,
+				76CE9F4A2B152FE800AA5F6E /* GoogleService-Info.plist */,
 				71C2A0542B0FC336004ADFB9 /* MenHa */,
 				71C2A0532B0FC336004ADFB9 /* Products */,
 				7C4F105D22AD16A7CE55E63D /* Pods */,
@@ -364,6 +367,7 @@
 				71C2A0872B0FC522004ADFB9 /* MentoDetail.storyboard in Resources */,
 				7123DB572B136AFB00147344 /* MenteeDetail.storyboard in Resources */,
 				71C2A0892B0FC52B004ADFB9 /* ModifySchedule.storyboard in Resources */,
+				76CE9F4B2B152FE800AA5F6E /* GoogleService-Info.plist in Resources */,
 				827397342B10C7BD0033EC5D /* Mento.storyboard in Resources */,
 				71C2A05F2B0FC337004ADFB9 /* Assets.xcassets in Resources */,
 				71C2A05D2B0FC336004ADFB9 /* Main.storyboard in Resources */,
