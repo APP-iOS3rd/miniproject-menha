@@ -14,9 +14,5 @@ struct Schedule {
     var isgroup: Bool
     var referencelinks: [String]
     var prgoressdate: Date
-    var createuser:User
-}
-
-struct User {
-    var profileUrl: String
+    var createuser: User
 }
