@@ -124,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				823202F62B14C84900179A3A /* Utils */,
-				823202F52B14C81900179A3A /* New Group */,
 				823202F12B14B82B00179A3A /* Items */,
 				827397322B10C5B20033EC5D /* Model */,
 				8273972F2B10AB450033EC5D /* Others */,
@@ -246,13 +245,6 @@
 				823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */,
 			);
 			path = Mentoring;
-			sourceTree = "<group>";
-		};
-		823202F52B14C81900179A3A /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		823202F62B14C84900179A3A /* Utils */ = {
