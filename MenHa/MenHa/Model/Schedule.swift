@@ -12,7 +12,11 @@ struct Schedule {
     var groupname: String
     var subject: String
     var isgroup: Bool
-    var progessunit: String
     var referencelinks: [String]
     var prgoressdate: Date
+    var createuser:User
+}
+
+struct User {
+    var profileUrl: String
 }
