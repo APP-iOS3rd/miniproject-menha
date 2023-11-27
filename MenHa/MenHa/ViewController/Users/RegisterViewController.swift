@@ -14,7 +14,7 @@ import MobileCoreServices
 import UniformTypeIdentifiers
 import FirebaseStorage
 
-class RegisterViewController : UIViewController {
+class RegisterViewController : UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     @IBOutlet var Username: UITextField!
     @IBOutlet var Useremail: UITextField!
