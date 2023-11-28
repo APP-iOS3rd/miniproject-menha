@@ -58,12 +58,15 @@ class RegisterViewController : UIViewController, UIImagePickerControllerDelegate
                     }
                 }
                 guard let user = authResult?.user else { return }
-                db.collection("users").document(user.uid).setData( [
-                        "name": name,
-                        "email": email,
-                        "password": password,
-                        "whoareyou": self.flag
-                    ])
+                
+                let newUser = User(name: name,
+                                   email: email,
+                                   password: password,
+                                   whoareyou: self.flag)
+                db.collection("users")
+                    .document(user.uid)
+                    .setData( newUser.asDictionary() )
+                
                 print("user added")
             }
         }

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
 
 class AddMentoScheduleViewController: UIViewController {
     let userService  = UserService()
@@ -30,14 +32,21 @@ class AddMentoScheduleViewController: UIViewController {
         
         guard canSave else { return }
         
+        let db = Firestore.firestore()
         let newId = UUID().uuidString
         
-//        let newSchedule = Schedule(groupname: groupname.text ?? "",
-//                                   subject: subject.text ?? "",
-//                                   isgroup: isgroup.selectedSegmentIndex == 0 ? false : true,
-//                                   referencelinks: <#T##[String]#>,
-//                                   prgoressdate: progressdate.date,
-//                                   createuser: <#T##User#>)
+        let newSchedule = sendSchedule(groupname: groupname.text ?? "",
+                                   subject: subject.text ?? "",
+                                   isgroup: isgroup.selectedSegmentIndex == 0 ? false : true,
+                                   referencelinks: [],
+                                   prgoressdate: progressdate.date,
+                                   createuser: userService.currentUser!)
+        
+        db.collection("users")
+            .document(userService.userId!)
+            .collection("mentoring")
+            .document(newId)
+            .setData(newSchedule.asDictionary())
         
         
         // 초대코드 생성 화면으로 이동
@@ -56,10 +65,8 @@ class AddMentoScheduleViewController: UIViewController {
             print("Error ! - 비어 있는 칸을 모두 입력하세요!")
             return false
         }
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm"
         
-        print(formatter.string(from: progressdate.date))
+        print(type(of: progressdate.date) )
         
         return true
     }

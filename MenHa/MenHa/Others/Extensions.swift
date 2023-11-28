@@ -22,3 +22,19 @@ extension UIImageView {
         }
     }
 }
+
+// 객체 생성 후 DB에 편하게 집어넣기 위한 확장
+extension Encodable {
+    func asDictionary() -> [String:Any] {
+        guard let data = try? JSONEncoder().encode(self) else{
+            return [:]
+        }
+        
+        do {
+            let json = try JSONSerialization.jsonObject(with: data) as? [String:Any]
+            return json ?? [:]
+        } catch {
+            return [:]
+        }
+    }
+}

@@ -22,7 +22,25 @@ class UserService {
     
     init() {
         userId = Auth.auth().currentUser?.uid // 현재 로그인한 유저 세션에서 유저 uid 가져오기
+        fetchUser()
     }
+    
+    func fetchUser() {
+        if let userId = userId {
+            // User 구조체 형태로 현재 로그인한 유저의 정보를 리턴
+            db.collection("users").document(userId).getDocument { snapshot, error in
+                if let error = error {
+                    return
+                } else {
+                    guard let user = try? snapshot?.data(as: User.self) else { return }
+                    self.currentUser = user
+                }
+            }
+        } else {
+            return
+        }
+    }
+    
     
     // 현재 로그인한 유저의 정보 리턴
     func getCurrentUser(completion: @escaping (Result<User, Error>) -> ()) {
