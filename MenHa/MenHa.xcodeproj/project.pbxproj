@@ -36,6 +36,9 @@
 		823202F42B14C15700179A3A /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */; };
 		823202F82B14C85A00179A3A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202F72B14C85A00179A3A /* DateHelper.swift */; };
 		823202FB2B14CD5D00179A3A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202FA2B14CD5D00179A3A /* Extensions.swift */; };
+		823202FF2B14D68300179A3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 823202FE2B14D68200179A3A /* GoogleService-Info.plist */; };
+		823203012B14DCC600179A3A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823203002B14DCC600179A3A /* UserService.swift */; };
+		823203032B14F02000179A3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823203022B14F02000179A3A /* User.swift */; };
 		827397312B10AB580033EC5D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827397302B10AB580033EC5D /* Constants.swift */; };
 		827397342B10C7BD0033EC5D /* Mento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827397332B10C7BD0033EC5D /* Mento.storyboard */; };
 		827397362B10C7E90033EC5D /* MentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827397352B10C7E90033EC5D /* MentoViewController.swift */; };
@@ -79,6 +82,9 @@
 		823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		823202F72B14C85A00179A3A /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		823202FA2B14CD5D00179A3A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		823202FE2B14D68200179A3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		823203002B14DCC600179A3A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		823203022B14F02000179A3A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		827397302B10AB580033EC5D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		827397332B10C7BD0033EC5D /* Mento.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mento.storyboard; sourceTree = "<group>"; };
 		827397352B10C7E90033EC5D /* MentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				823202F62B14C84900179A3A /* Utils */,
-				823202F52B14C81900179A3A /* New Group */,
 				823202F12B14B82B00179A3A /* Items */,
 				827397322B10C5B20033EC5D /* Model */,
 				8273972F2B10AB450033EC5D /* Others */,
@@ -246,13 +251,6 @@
 			path = Mentoring;
 			sourceTree = "<group>";
 		};
-		823202F52B14C81900179A3A /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		823202F62B14C84900179A3A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,8 +279,9 @@
 		827397322B10C5B20033EC5D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				823203002B14DCC600179A3A /* UserService.swift */,
 				823202EF2B14ABAF00179A3A /* Schedule.swift */,
-				712D4F9D2B14D7E200711831 /* User.swift */,
+				823203022B14F02000179A3A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -430,11 +429,13 @@
 				71C2A06D2B0FC3F6004ADFB9 /* LoginViewController.swift in Sources */,
 				71C2A0712B0FC429004ADFB9 /* AddMentoScheduleViewController.swift in Sources */,
 				823202F82B14C85A00179A3A /* DateHelper.swift in Sources */,
+				823203032B14F02000179A3A /* User.swift in Sources */,
 				823202F42B14C15700179A3A /* ScheduleTableViewCell.swift in Sources */,
 				71C2A0752B0FC457004ADFB9 /* CreateInvieteCodeViewController.swift in Sources */,
 				827397362B10C7E90033EC5D /* MentoViewController.swift in Sources */,
 				71C2A06F2B0FC400004ADFB9 /* RegisterViewController.swift in Sources */,
 				7123DB592B136B5700147344 /* MenteeDetailViewController.swift in Sources */,
+				823203012B14DCC600179A3A /* UserService.swift in Sources */,
 				71C2A0732B0FC43C004ADFB9 /* AddMentiScheduleViewController.swift in Sources */,
 				71C2A05A2B0FC336004ADFB9 /* MainViewController.swift in Sources */,
 				71C2A0562B0FC336004ADFB9 /* AppDelegate.swift in Sources */,

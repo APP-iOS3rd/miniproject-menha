@@ -8,6 +8,7 @@
 import UIKit
 
 class AddMentoScheduleViewController: UIViewController {
+    let userService  = UserService()
 
     @IBOutlet weak var groupname: UITextField!
     @IBOutlet weak var subject: UITextField!

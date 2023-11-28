@@ -1,6 +1,7 @@
 // 화면 전환 시 오타 방지
 
 import Foundation
+import FirebaseFirestore
 
 enum Main: String{
     case name = "Main"
@@ -56,3 +57,5 @@ enum Modify: String{
     case name = "ModifySchedule"
     case id = "ModifyScheduleViewController"
 }
+
+let COLLECTION_USERS = Firestore.firestore().collection("users")
