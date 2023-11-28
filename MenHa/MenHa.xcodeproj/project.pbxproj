@@ -10,6 +10,8 @@
 		7123DB572B136AFB00147344 /* MenteeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7123DB562B136AFB00147344 /* MenteeDetail.storyboard */; };
 		7123DB592B136B5700147344 /* MenteeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7123DB582B136B5700147344 /* MenteeDetailViewController.swift */; };
 		712D4F9A2B14B17B00711831 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 712D4F992B14B17B00711831 /* GoogleService-Info.plist */; };
+		712D4F9C2B14D77200711831 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 712D4F9B2B14D77200711831 /* GoogleService-Info.plist */; };
+		712D4F9E2B14D7E200711831 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712D4F9D2B14D7E200711831 /* User.swift */; };
 		71C2A0562B0FC336004ADFB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2A0552B0FC336004ADFB9 /* AppDelegate.swift */; };
 		71C2A0582B0FC336004ADFB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2A0572B0FC336004ADFB9 /* SceneDelegate.swift */; };
 		71C2A05A2B0FC336004ADFB9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2A0592B0FC336004ADFB9 /* MainViewController.swift */; };
@@ -52,6 +54,8 @@
 		7123DB562B136AFB00147344 /* MenteeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenteeDetail.storyboard; sourceTree = "<group>"; };
 		7123DB582B136B5700147344 /* MenteeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeDetailViewController.swift; sourceTree = "<group>"; };
 		712D4F992B14B17B00711831 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		712D4F9B2B14D77200711831 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		712D4F9D2B14D7E200711831 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		71C2A0522B0FC336004ADFB9 /* MenHa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenHa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C2A0552B0FC336004ADFB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71C2A0572B0FC336004ADFB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +107,7 @@
 		71C2A0492B0FC336004ADFB9 = {
 			isa = PBXGroup;
 			children = (
-				823202FE2B14D68200179A3A /* GoogleService-Info.plist */,
+				712D4F9B2B14D77200711831 /* GoogleService-Info.plist */,
 				71C2A0542B0FC336004ADFB9 /* MenHa */,
 				71C2A0532B0FC336004ADFB9 /* Products */,
 				7C4F105D22AD16A7CE55E63D /* Pods */,
@@ -352,7 +356,7 @@
 			files = (
 				71C2A0622B0FC337004ADFB9 /* LaunchScreen.storyboard in Resources */,
 				71C2A0812B0FC507004ADFB9 /* AddCode.storyboard in Resources */,
-				823202FF2B14D68300179A3A /* GoogleService-Info.plist in Resources */,
+				712D4F9C2B14D77200711831 /* GoogleService-Info.plist in Resources */,
 				71C2A0832B0FC50E004ADFB9 /* AddSchedule.storyboard in Resources */,
 				827397382B10C8010033EC5D /* Mentee.storyboard in Resources */,
 				71C2A0852B0FC517004ADFB9 /* CreateCode.storyboard in Resources */,
@@ -437,6 +441,7 @@
 				71C2A0562B0FC336004ADFB9 /* AppDelegate.swift in Sources */,
 				8273973A2B10C8120033EC5D /* MenteeViewController.swift in Sources */,
 				71C2A0582B0FC336004ADFB9 /* SceneDelegate.swift in Sources */,
+				712D4F9E2B14D7E200711831 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

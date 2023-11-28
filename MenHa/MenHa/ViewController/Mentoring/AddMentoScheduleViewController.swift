@@ -9,13 +9,38 @@ import UIKit
 
 class AddMentoScheduleViewController: UIViewController {
     let userService  = UserService()
+
+    @IBOutlet weak var groupname: UITextField!
+    @IBOutlet weak var subject: UITextField!
+    @IBOutlet weak var referencelinks: UITextView!
+    @IBOutlet weak var isgroup: UISegmentedControl! // selectedSegmentIndex( 개인 == 0, 그룹 == 1 )
+    @IBOutlet weak var progressdate: UIDatePicker!
+    
+    var selectTime : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func addSchedule(_ sender: Any) {
+        
+        guard canSave else { return }
+        
+        let newId = UUID().uuidString
+        
+//        let newSchedule = Schedule(groupname: groupname.text ?? "",
+//                                   subject: subject.text ?? "",
+//                                   isgroup: isgroup.selectedSegmentIndex == 0 ? false : true,
+//                                   referencelinks: <#T##[String]#>,
+//                                   prgoressdate: progressdate.date,
+//                                   createuser: <#T##User#>)
+        
+        
+        // 초대코드 생성 화면으로 이동
         let secondStoryboard = UIStoryboard(name: CreateCode.name.rawValue, bundle: nil)
          
         // Instantiate the desired view controller from the second storyboard
@@ -24,6 +49,19 @@ class AddMentoScheduleViewController: UIViewController {
             // Perform the navigation
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
+    }
+    
+    var canSave: Bool {
+        guard groupname.text != "", subject.text != "" else {
+            print("Error ! - 비어 있는 칸을 모두 입력하세요!")
+            return false
+        }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        print(formatter.string(from: progressdate.date))
+        
+        return true
     }
     
     /*
