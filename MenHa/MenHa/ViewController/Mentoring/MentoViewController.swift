@@ -76,8 +76,8 @@ extension MentoViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    // cell을 눌렀을 때 scheduleDetail로 가는 함수
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // 해당 cell의 schedule 객체를 ModifiyScheduleViewController로 넘겨주기
         let storyboard = UIStoryboard(name: MentoDetail.name.rawValue, bundle: nil)
         
         // Instantiate the desired view controller from the second storyboard
@@ -88,6 +88,7 @@ extension MentoViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    // cell의 수정 버튼을 눌렀을 때 ModifySchedule로 가는 함수
     @objc func modifyBtnClicked(sender: UIButton) {
         print("\(sender.tag) 버튼의 tag로 index값을 받아서 데이터 처리하기")
         let storyboard = UIStoryboard(name: Modify.name.rawValue, bundle: nil)
