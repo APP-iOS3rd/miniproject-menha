@@ -51,13 +51,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="멘토링 주제" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voA-Ng-oTi">
-                                        <rect key="frame" x="16" y="122.33333333333333" width="78" height="20.333333333333329"/>
+                                        <rect key="frame" x="16" y="122.33333333333333" width="361" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-Q0-tQx">
-                                        <rect key="frame" x="16" y="158.66666666666666" width="78" height="54"/>
+                                        <rect key="frame" x="16" y="158.66666666666666" width="361" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="gO0-qM-eh3"/>
                                         </constraints>
@@ -118,6 +118,7 @@
                                     <constraint firstItem="8Kc-Q0-tQx" firstAttribute="trailing" secondItem="voA-Ng-oTi" secondAttribute="trailing" id="4qm-oM-ji9"/>
                                     <constraint firstItem="4wm-Me-Ets" firstAttribute="centerX" secondItem="Eoc-qW-67h" secondAttribute="centerX" id="7Hr-58-4AV"/>
                                     <constraint firstItem="2UV-IA-NTZ" firstAttribute="leading" secondItem="mHv-ow-vDa" secondAttribute="leading" constant="16" id="96S-lt-Keb"/>
+                                    <constraint firstItem="8Kc-Q0-tQx" firstAttribute="trailing" secondItem="nt8-xf-EuQ" secondAttribute="trailing" id="B8t-ts-M23"/>
                                     <constraint firstItem="8Kc-Q0-tQx" firstAttribute="leading" secondItem="voA-Ng-oTi" secondAttribute="leading" id="BtL-it-Vhf"/>
                                     <constraint firstItem="9AU-p9-fQn" firstAttribute="top" secondItem="KN1-R3-Zoc" secondAttribute="bottom" constant="16" id="Cau-EY-o9U"/>
                                     <constraint firstItem="8Kc-Q0-tQx" firstAttribute="leading" secondItem="nt8-xf-EuQ" secondAttribute="leading" id="GeM-AW-Ojg"/>
@@ -164,6 +165,13 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="393" height="1000"/>
+                    <connections>
+                        <outlet property="groupName" destination="nt8-xf-EuQ" id="0FL-Ch-q9i"/>
+                        <outlet property="isgroup" destination="Jb0-nG-d8n" id="5Gw-lD-eWu"/>
+                        <outlet property="progressdate" destination="9AU-p9-fQn" id="2Z4-SH-O7w"/>
+                        <outlet property="referencelinks" destination="4wm-Me-Ets" id="Y5V-Hw-34S"/>
+                        <outlet property="subject" destination="8Kc-Q0-tQx" id="sFM-bx-uEG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
