@@ -8,17 +8,11 @@
 import UIKit
 
 class MenteeViewController: UIViewController {
-    let user = UserService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-            self.user.logout { resulr in
-                resulr
-            }
-        })
     }
     
 

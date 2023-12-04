@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7123DB572B136AFB00147344 /* MenteeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7123DB562B136AFB00147344 /* MenteeDetail.storyboard */; };
 		7123DB592B136B5700147344 /* MenteeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7123DB582B136B5700147344 /* MenteeDetailViewController.swift */; };
+		71BA15762B1E1C20003845AA /* MentoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA15752B1E1C20003845AA /* MentoDetailTableViewCell.swift */; };
 		71C2A0562B0FC336004ADFB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2A0552B0FC336004ADFB9 /* AppDelegate.swift */; };
 		71C2A0582B0FC336004ADFB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2A0572B0FC336004ADFB9 /* SceneDelegate.swift */; };
 		71C2A05A2B0FC336004ADFB9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2A0592B0FC336004ADFB9 /* MainViewController.swift */; };
@@ -50,6 +51,7 @@
 		4C76E6BCE2059976B6D96CA0 /* Pods-MenHa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenHa.debug.xcconfig"; path = "Target Support Files/Pods-MenHa/Pods-MenHa.debug.xcconfig"; sourceTree = "<group>"; };
 		7123DB562B136AFB00147344 /* MenteeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenteeDetail.storyboard; sourceTree = "<group>"; };
 		7123DB582B136B5700147344 /* MenteeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeDetailViewController.swift; sourceTree = "<group>"; };
+		71BA15752B1E1C20003845AA /* MentoDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoDetailTableViewCell.swift; sourceTree = "<group>"; };
 		71C2A0522B0FC336004ADFB9 /* MenHa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenHa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C2A0552B0FC336004ADFB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71C2A0572B0FC336004ADFB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */,
+				71BA15752B1E1C20003845AA /* MentoDetailTableViewCell.swift */,
 			);
 			path = Mentoring;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				827397362B10C7E90033EC5D /* MentoViewController.swift in Sources */,
 				71C2A06F2B0FC400004ADFB9 /* RegisterViewController.swift in Sources */,
 				7123DB592B136B5700147344 /* MenteeDetailViewController.swift in Sources */,
+				71BA15762B1E1C20003845AA /* MentoDetailTableViewCell.swift in Sources */,
 				823203012B14DCC600179A3A /* UserService.swift in Sources */,
 				71C2A0732B0FC43C004ADFB9 /* AddMentiScheduleViewController.swift in Sources */,
 				71C2A05A2B0FC336004ADFB9 /* MainViewController.swift in Sources */,
