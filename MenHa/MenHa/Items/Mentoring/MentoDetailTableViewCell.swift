@@ -1,19 +1,17 @@
 //
-//  ScheduleTableViewCell.swift
+//  MentoDetailTableViewCell.swift
 //  MenHa
 //
-//  Created by SeokkiKwon on 11/27/23.
+//  Created by 이성현 on 2023/12/04.
 //
 
 import UIKit
 
-class ScheduleTableViewCell: UITableViewCell {
+class MentoDetailTableViewCell: UITableViewCell {
 
-    @IBOutlet var userImage: UIImageView!
-    @IBOutlet var groupName: UILabel!
-    @IBOutlet var prgressUnit: UILabel!
-    @IBOutlet var progressData: UILabel!
-    @IBOutlet weak var modifyBtn: UIButton!
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var userPosition: UILabel!
+    @IBOutlet weak var userName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

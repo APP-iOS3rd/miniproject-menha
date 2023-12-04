@@ -70,8 +70,35 @@ extension MentoViewController: UITableViewDelegate, UITableViewDataSource {
         //        cell.prgressUnit.text = "화요일 진행"
         //        let url = URL(string: datas[row].createuser.profileUrl)
         //        cell.userImage.load(url: url!)
+        cell.modifyBtn.tag = indexPath.row
+        cell.modifyBtn.addTarget(self, action: #selector(modifyBtnClicked(sender: )), for: .touchUpInside)
+        
         return cell
     }
     
+    // cell을 눌렀을 때 scheduleDetail로 가는 함수
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: MentoDetail.name.rawValue, bundle: nil)
+        
+        // Instantiate the desired view controller from the second storyboard
+        if let targetController = storyboard.instantiateViewController(withIdentifier: MentoDetail.id.rawValue) as? MentoDetailViewController {
+            
+            // Perform the navigation
+            self.navigationController?.pushViewController(targetController, animated: true)
+        }
+    }
+    
+    // cell의 수정 버튼을 눌렀을 때 ModifySchedule로 가는 함수
+    @objc func modifyBtnClicked(sender: UIButton) {
+        print("\(sender.tag) 버튼의 tag로 index값을 받아서 데이터 처리하기")
+        let storyboard = UIStoryboard(name: Modify.name.rawValue, bundle: nil)
+        
+        // Instantiate the desired view controller from the second storyboard
+        if let targetController = storyboard.instantiateViewController(withIdentifier: Modify.id.rawValue) as? ModifyScheduleViewController {
+            
+            // Perform the navigation
+            self.navigationController?.pushViewController(targetController, animated: true)
+        }
+    }
     
 }
