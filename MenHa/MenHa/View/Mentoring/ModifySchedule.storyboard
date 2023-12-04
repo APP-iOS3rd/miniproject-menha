@@ -166,7 +166,7 @@
                     </view>
                     <size key="freeformSize" width="393" height="1000"/>
                     <connections>
-                        <outlet property="groupName" destination="nt8-xf-EuQ" id="0FL-Ch-q9i"/>
+                        <outlet property="groupname" destination="nt8-xf-EuQ" id="t5H-RQ-sLX"/>
                         <outlet property="isgroup" destination="Jb0-nG-d8n" id="5Gw-lD-eWu"/>
                         <outlet property="progressdate" destination="9AU-p9-fQn" id="2Z4-SH-O7w"/>
                         <outlet property="referencelinks" destination="4wm-Me-Ets" id="Y5V-Hw-34S"/>

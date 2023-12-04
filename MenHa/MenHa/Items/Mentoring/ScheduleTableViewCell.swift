@@ -13,6 +13,7 @@ class ScheduleTableViewCell: UITableViewCell {
     @IBOutlet var groupName: UILabel!
     @IBOutlet var prgressUnit: UILabel!
     @IBOutlet var progressData: UILabel!
+    @IBOutlet weak var modifyBtn: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
