@@ -78,7 +78,14 @@ extension MentoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 해당 cell의 schedule 객체를 ModifiyScheduleViewController로 넘겨주기
+        let storyboard = UIStoryboard(name: MentoDetail.name.rawValue, bundle: nil)
         
+        // Instantiate the desired view controller from the second storyboard
+        if let targetController = storyboard.instantiateViewController(withIdentifier: MentoDetail.id.rawValue) as? MentoDetailViewController {
+            
+            // Perform the navigation
+            self.navigationController?.pushViewController(targetController, animated: true)
+        }
     }
     
     @objc func modifyBtnClicked(sender: UIButton) {
