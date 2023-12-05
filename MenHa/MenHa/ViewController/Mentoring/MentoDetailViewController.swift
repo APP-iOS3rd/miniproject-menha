@@ -8,15 +8,29 @@
 import UIKit
 
 class MentoDetailViewController: UIViewController {
-
+    var imageUrl:URL?
+    var mentoName: String?
+    var subject: String?
+    @IBOutlet var subjectLabel: UILabel!
+    @IBOutlet var mentoNameLabel: UILabel!
+    @IBOutlet var mentoProfileImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+  
+        setScheduleData()
+    }
+    
+    func setScheduleData() {
+        if let imageUrl = imageUrl {
+            mentoProfileImage.load(url: imageUrl)
+        }
+        mentoNameLabel.text = mentoName
+        subjectLabel.text = subject
     }
     
 
@@ -33,8 +47,10 @@ class MentoDetailViewController: UIViewController {
 }
 
 extension MentoDetailViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

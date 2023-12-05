@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             switch result {
                 // 로그인된 유저라면 멘토, 멘티를 확인한뒤 다른 화면으로 이동
             case .success(let user):
-                if user.whoareyou == 2 {
+                if user.whoareyou == 1 {
                     guard let mentoViewController = mentoStoryboard.instantiateViewController(withIdentifier: Mento.id.rawValue) as? MentoViewController else { return }
                     let navigationCotroller = UINavigationController(rootViewController: mentoViewController)
                     self.window?.rootViewController = navigationCotroller
@@ -38,6 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     self.window?.rootViewController = navigationCotroller
                 }
             case .failure(let _):
+                
                 guard let loginViewController = loginStoryboard.instantiateViewController(withIdentifier: Login.id.rawValue) as? LoginViewController else { return }
                 let navigationCotroller = UINavigationController(rootViewController: loginViewController)
                 self.window?.rootViewController = navigationCotroller

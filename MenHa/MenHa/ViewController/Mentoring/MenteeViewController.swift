@@ -8,7 +8,7 @@
 import UIKit
 
 class MenteeViewController: UIViewController {
-
+    private let userService = UserService.shared
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +35,10 @@ class MenteeViewController: UIViewController {
             // Perform the navigation
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
+    }
+    
+    @IBAction func logoutButton(_ sender: Any) {
+        userService.logout { _ in}
     }
     
     

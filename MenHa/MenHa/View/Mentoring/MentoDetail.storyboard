@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mento Detail View Controller-->
+        <!--멘토링 일정상세-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="MentoDetailViewController" id="Y6W-OH-hqX" customClass="MentoDetailViewController" customModule="MenHa" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,14 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="멘토링 일정상세" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJk-3t-2TL">
-                                <rect key="frame" x="127.66666666666669" y="59.000000000000007" width="138" height="26.333333333333336"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAg-zF-IEC">
-                                <rect key="frame" x="0.0" y="95.333333333333371" width="393" height="1104.6666666666665"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="1097"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRi-S1-r6t">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1105"/>
@@ -34,8 +29,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KWP-fe-4aR">
-                                                <rect key="frame" x="25" y="56.000000000000014" width="100" height="99.999999999999986"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KWP-fe-4aR">
+                                                <rect key="frame" x="25" y="56" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="FCq-hp-K97"/>
                                                     <constraint firstAttribute="width" constant="100" id="o5y-5E-SVr"/>
@@ -43,18 +38,18 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
+                                                        <integer key="value" value="50"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="멘토이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9g-aC-d7c">
-                                                <rect key="frame" x="175" y="95.666666666666671" width="59" height="21"/>
+                                                <rect key="frame" x="175" y="95.666666666666657" width="59" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="멘티 구성원" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jL-sk-mvh">
-                                                <rect key="frame" x="139.66666666666666" y="176" width="113.66666666666666" height="30"/>
+                                                <rect key="frame" x="139.66666666666666" y="176" width="114" height="30"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -63,7 +58,7 @@
                                                 <rect key="frame" x="0.0" y="221" width="393" height="450"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="450" id="gHv-KT-ynA"/>
+                                                    <constraint firstAttribute="height" constant="450" id="Vde-ph-7fz"/>
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MentoDetailTableViewCell" id="PCq-xp-d9F" customClass="MentoDetailTableViewCell" customModule="MenHa" customModuleProvider="target">
@@ -112,6 +107,12 @@
                                                                         <constraint firstItem="LrD-an-oFl" firstAttribute="top" secondItem="ZTl-tQ-7YR" secondAttribute="top" constant="20" id="hZ6-n4-466"/>
                                                                         <constraint firstItem="20a-tp-Ww0" firstAttribute="leading" secondItem="LrD-an-oFl" secondAttribute="trailing" constant="20" id="iew-tW-7ue"/>
                                                                     </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </view>
                                                             </subviews>
                                                             <constraints>
@@ -196,20 +197,40 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MAg-zF-IEC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="KXF-8a-QRE"/>
                             <constraint firstAttribute="bottom" secondItem="MAg-zF-IEC" secondAttribute="bottom" id="Rf6-Uh-4MX"/>
-                            <constraint firstItem="MAg-zF-IEC" firstAttribute="top" secondItem="hJk-3t-2TL" secondAttribute="bottom" constant="10" id="Whd-oW-o0K"/>
-                            <constraint firstItem="hJk-3t-2TL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="kcl-3k-4Qb"/>
                             <constraint firstItem="MAg-zF-IEC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qu9-Jn-KRP"/>
-                            <constraint firstItem="hJk-3t-2TL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="vpI-a1-UJD"/>
                             <constraint firstItem="MAg-zF-IEC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="y34-BZ-Uyi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="멘토링 일정상세" id="gs9-Ck-hw7"/>
                     <size key="freeformSize" width="393" height="1200"/>
                     <connections>
+                        <outlet property="mentoNameLabel" destination="t9g-aC-d7c" id="Xfh-kd-yNx"/>
+                        <outlet property="mentoProfileImage" destination="KWP-fe-4aR" id="N0n-hf-dGg"/>
+                        <outlet property="subjectLabel" destination="XLe-kY-A2d" id="Ddg-wc-6RJ"/>
                         <outlet property="tableView" destination="aq5-lj-z7T" id="15C-Jg-h3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-13.380281690140846"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cnI-FX-CF7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rdC-wy-N9s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BAj-Vv-JZb">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="NsX-zO-B3A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQU-I5-FEv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-13.380281690140846"/>
         </scene>

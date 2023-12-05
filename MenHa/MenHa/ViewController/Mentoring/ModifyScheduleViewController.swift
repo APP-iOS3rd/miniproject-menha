@@ -16,7 +16,7 @@ class ModifyScheduleViewController: UIViewController {
     @IBOutlet weak var progressdate: UIDatePicker!
 
     // 건네받은 Schedule 모델을 토대로 각 textfield, textview, datepicker 재구성하기
-    var modifySchedule : receiveSchedule?
+    var modifySchedule : ReceiveSchedule?
     
     override func viewDidLoad() {
         super.viewDidLoad()

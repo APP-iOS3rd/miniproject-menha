@@ -35,12 +35,14 @@ class AddMentoScheduleViewController: UIViewController {
         let db = Firestore.firestore()
         let newId = UUID().uuidString
         
-        let newSchedule = sendSchedule(groupname: groupname.text ?? "",
+        let newSchedule = SendSchedule(groupname: groupname.text ?? "",
                                    subject: subject.text ?? "",
                                    isgroup: isgroup.selectedSegmentIndex == 0 ? false : true,
                                    referencelinks: [],
                                    prgoressdate: progressdate.date,
-                                   createuser: userService.currentUser!)
+                                   createuser: userService.currentUser!,
+                                   documentId: newId
+        )
         
         db.collection("users")
             .document(userService.userId!)
