@@ -50,12 +50,16 @@ class UserService {
                 if let error = error {
                     completion(.failure(error))
                 } else {
-                    guard let user = try? snapshot?.data(as: User.self) else { return }
+                    guard let user = try? snapshot?.data(as: User.self) else {
+                        completion(.failure(AuthError.noneUser))
+                        return
+                    }
                     self.currentUser = user
                     completion(.success(user))
                 }
             }
         } else {
+            
             completion(.failure(AuthError.noneUserSession))
         }
     }

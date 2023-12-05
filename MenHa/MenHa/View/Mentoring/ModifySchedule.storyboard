@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Modify Schedule View Controller-->
+        <!--멘토링 일정수정-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="ModifyScheduleViewController" id="Y6W-OH-hqX" customClass="ModifyScheduleViewController" customModule="MenHa" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,16 +19,18 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohr-ZD-fpz">
                                 <rect key="frame" x="16" y="912" width="361" height="54"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="4fY-h2-eI7"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="재등록"/>
+                                <buttonConfiguration key="configuration" style="plain" title="재등록">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eoc-qW-67h">
-                                <rect key="frame" x="0.0" y="59" width="393" height="853"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="809"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTW-rA-H41">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="845"/>
@@ -43,7 +46,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nt8-xf-EuQ">
-                                        <rect key="frame" x="16" y="52.333333333333329" width="361" height="54"/>
+                                        <rect key="frame" x="16" y="52.333333333333343" width="361" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="DvS-gu-tJa"/>
                                         </constraints>
@@ -57,7 +60,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-Q0-tQx">
-                                        <rect key="frame" x="16" y="158.66666666666666" width="361" height="54"/>
+                                        <rect key="frame" x="16" y="158.66666666666669" width="361" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="gO0-qM-eh3"/>
                                         </constraints>
@@ -71,13 +74,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="멘토링 유형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3e-fa-nmM">
-                                        <rect key="frame" x="16" y="339" width="83" height="20.333333333333314"/>
+                                        <rect key="frame" x="16" y="339" width="78" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jb0-nG-d8n">
-                                        <rect key="frame" x="16" y="375.33333333333331" width="83" height="55"/>
+                                        <rect key="frame" x="16" y="375.33333333333331" width="361" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="e6f-CP-Ps7"/>
                                         </constraints>
@@ -87,7 +90,7 @@
                                         </segments>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-R3-Zoc">
-                                        <rect key="frame" x="16" y="445.33333333333331" width="59" height="20.333333333333314"/>
+                                        <rect key="frame" x="16" y="445.33333333333337" width="59" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -131,7 +134,6 @@
                                     <constraint firstItem="nt8-xf-EuQ" firstAttribute="top" secondItem="2UV-IA-NTZ" secondAttribute="bottom" constant="16" id="Rtf-eQ-fWT"/>
                                     <constraint firstItem="nt8-xf-EuQ" firstAttribute="leading" secondItem="2UV-IA-NTZ" secondAttribute="leading" id="S1z-dI-fPD"/>
                                     <constraint firstItem="mHv-ow-vDa" firstAttribute="trailing" secondItem="2UV-IA-NTZ" secondAttribute="trailing" constant="16" id="SHu-fc-QqQ"/>
-                                    <constraint firstItem="Jb0-nG-d8n" firstAttribute="trailing" secondItem="K3e-fa-nmM" secondAttribute="trailing" id="ZmK-Dh-Lpy"/>
                                     <constraint firstItem="KN1-R3-Zoc" firstAttribute="leading" secondItem="nt8-xf-EuQ" secondAttribute="leading" id="buj-DC-EAU"/>
                                     <constraint firstItem="4wm-Me-Ets" firstAttribute="leading" secondItem="nt8-xf-EuQ" secondAttribute="leading" id="fJs-m5-9ut"/>
                                     <constraint firstItem="KN1-R3-Zoc" firstAttribute="top" secondItem="Jb0-nG-d8n" secondAttribute="bottom" constant="16" id="fqb-Li-TKw"/>
@@ -139,13 +141,13 @@
                                     <constraint firstItem="QTW-rA-H41" firstAttribute="bottom" secondItem="E1q-To-5EB" secondAttribute="bottom" id="giX-kc-9s3"/>
                                     <constraint firstItem="4wm-Me-Ets" firstAttribute="top" secondItem="7Z4-FI-uMs" secondAttribute="bottom" constant="16" id="hQ6-O7-Qzr"/>
                                     <constraint firstItem="9AU-p9-fQn" firstAttribute="leading" secondItem="KN1-R3-Zoc" secondAttribute="leading" id="ieS-b7-URT"/>
-                                    <constraint firstItem="Jb0-nG-d8n" firstAttribute="leading" secondItem="nt8-xf-EuQ" secondAttribute="leading" id="jZB-DV-7Eo"/>
                                     <constraint firstItem="8Kc-Q0-tQx" firstAttribute="top" secondItem="voA-Ng-oTi" secondAttribute="bottom" constant="16" id="lx3-qD-Pyy"/>
                                     <constraint firstItem="7Z4-FI-uMs" firstAttribute="top" secondItem="8Kc-Q0-tQx" secondAttribute="bottom" constant="16" id="m6u-yv-a7Q"/>
+                                    <constraint firstItem="mHv-ow-vDa" firstAttribute="trailing" secondItem="Jb0-nG-d8n" secondAttribute="trailing" constant="16" id="oGX-JO-aP0"/>
                                     <constraint firstItem="2UV-IA-NTZ" firstAttribute="top" secondItem="mHv-ow-vDa" secondAttribute="top" constant="16" id="paw-sR-TEi"/>
                                     <constraint firstItem="K3e-fa-nmM" firstAttribute="top" secondItem="4wm-Me-Ets" secondAttribute="bottom" constant="16" id="s7L-RD-tbV"/>
+                                    <constraint firstItem="Jb0-nG-d8n" firstAttribute="leading" secondItem="mHv-ow-vDa" secondAttribute="leading" constant="16" id="vCj-Wp-RYU"/>
                                     <constraint firstItem="QTW-rA-H41" firstAttribute="leading" secondItem="E1q-To-5EB" secondAttribute="leading" id="wBi-24-IU3"/>
-                                    <constraint firstItem="Jb0-nG-d8n" firstAttribute="leading" secondItem="K3e-fa-nmM" secondAttribute="leading" id="y2g-Ex-3vK"/>
                                     <constraint firstItem="QTW-rA-H41" firstAttribute="top" secondItem="E1q-To-5EB" secondAttribute="top" id="ybK-RT-HHi"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="E1q-To-5EB"/>
@@ -164,6 +166,7 @@
                             <constraint firstItem="Ohr-ZD-fpz" firstAttribute="top" secondItem="Eoc-qW-67h" secondAttribute="bottom" id="vAB-OC-3eZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="멘토링 일정수정" id="7xZ-fJ-vwg"/>
                     <size key="freeformSize" width="393" height="1000"/>
                     <connections>
                         <outlet property="groupname" destination="nt8-xf-EuQ" id="t5H-RQ-sLX"/>
@@ -175,6 +178,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-13.380281690140846"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L0f-Gs-cZn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UeB-v4-HCm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="366-33-MiG">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="y8J-Na-Bm2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ie8-73-R4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-13.380281690140846"/>
         </scene>
     </scenes>
@@ -184,9 +205,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

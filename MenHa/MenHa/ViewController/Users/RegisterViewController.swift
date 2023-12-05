@@ -56,16 +56,26 @@ class RegisterViewController : UIViewController, UIImagePickerControllerDelegate
                         print("failed to upload profile image")
                         return
                     }
+                    
+                    guard let user = authResult?.user else { return }
+                    
+                    firebaseRef.downloadURL { url, _ in
+                        guard let imageUrl = url?.absoluteString else {return}
+                        
+                        let newUser = User(name: name,
+                                           email: email,
+                                           password: password,
+                                           whoareyou: self.flag,
+                                           profileUrl: imageUrl
+                        )
+                        db.collection("users")
+                            .document(user.uid)
+                            .setData( newUser.asDictionary() )
+                    }
+                    
+                    
                 }
-                guard let user = authResult?.user else { return }
                 
-                let newUser = User(name: name,
-                                   email: email,
-                                   password: password,
-                                   whoareyou: self.flag)
-                db.collection("users")
-                    .document(user.uid)
-                    .setData( newUser.asDictionary() )
                 
                 print("user added")
             }

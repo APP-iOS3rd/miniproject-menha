@@ -30,7 +30,7 @@
 		71C2A0892B0FC52B004ADFB9 /* ModifySchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */; };
 		71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08A2B0FC533004ADFB9 /* Login.storyboard */; };
 		71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08C2B0FC537004ADFB9 /* Register.storyboard */; };
-		71F4F36E2B16000200F1F407 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71F4F36D2B16000200F1F407 /* GoogleService-Info.plist */; };
+		820A44CA2B1E2B4900A322AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 820A44C92B1E2B4900A322AC /* GoogleService-Info.plist */; };
 		823202F02B14ABAF00179A3A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202EF2B14ABAF00179A3A /* Schedule.swift */; };
 		823202F42B14C15700179A3A /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */; };
 		823202F82B14C85A00179A3A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202F72B14C85A00179A3A /* DateHelper.swift */; };
@@ -42,6 +42,7 @@
 		827397362B10C7E90033EC5D /* MentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827397352B10C7E90033EC5D /* MentoViewController.swift */; };
 		827397382B10C8010033EC5D /* Mentee.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827397372B10C8010033EC5D /* Mentee.storyboard */; };
 		8273973A2B10C8120033EC5D /* MenteeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827397392B10C8120033EC5D /* MenteeViewController.swift */; };
+		8294D52B2B1E5881002D3CD8 /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294D52A2B1E5881002D3CD8 /* ScheduleService.swift */; };
 		99A969B11A6FB1AB8B5695DC /* Pods_MenHa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2857DF000C7867CB5117CBB1 /* Pods_MenHa.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +75,7 @@
 		71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModifySchedule.storyboard; sourceTree = "<group>"; };
 		71C2A08A2B0FC533004ADFB9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		71C2A08C2B0FC537004ADFB9 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
-		71F4F36D2B16000200F1F407 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		820A44C92B1E2B4900A322AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		823202EF2B14ABAF00179A3A /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		823202F72B14C85A00179A3A /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		827397352B10C7E90033EC5D /* MentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoViewController.swift; sourceTree = "<group>"; };
 		827397372B10C8010033EC5D /* Mentee.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mentee.storyboard; sourceTree = "<group>"; };
 		827397392B10C8120033EC5D /* MenteeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeViewController.swift; sourceTree = "<group>"; };
+		8294D52A2B1E5881002D3CD8 /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,7 @@
 		71C2A0492B0FC336004ADFB9 = {
 			isa = PBXGroup;
 			children = (
-				71F4F36D2B16000200F1F407 /* GoogleService-Info.plist */,
+				820A44C92B1E2B4900A322AC /* GoogleService-Info.plist */,
 				71C2A0542B0FC336004ADFB9 /* MenHa */,
 				71C2A0532B0FC336004ADFB9 /* Products */,
 				7C4F105D22AD16A7CE55E63D /* Pods */,
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				823203002B14DCC600179A3A /* UserService.swift */,
+				8294D52A2B1E5881002D3CD8 /* ScheduleService.swift */,
 				823202EF2B14ABAF00179A3A /* Schedule.swift */,
 				823203022B14F02000179A3A /* User.swift */,
 			);
@@ -355,7 +358,7 @@
 				71C2A05D2B0FC336004ADFB9 /* Main.storyboard in Resources */,
 				71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */,
 				71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */,
-				71F4F36E2B16000200F1F407 /* GoogleService-Info.plist in Resources */,
+				820A44CA2B1E2B4900A322AC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +427,7 @@
 				7123DB592B136B5700147344 /* MenteeDetailViewController.swift in Sources */,
 				71BA15762B1E1C20003845AA /* MentoDetailTableViewCell.swift in Sources */,
 				823203012B14DCC600179A3A /* UserService.swift in Sources */,
+				8294D52B2B1E5881002D3CD8 /* ScheduleService.swift in Sources */,
 				71C2A0732B0FC43C004ADFB9 /* AddMentiScheduleViewController.swift in Sources */,
 				71C2A05A2B0FC336004ADFB9 /* MainViewController.swift in Sources */,
 				71C2A0562B0FC336004ADFB9 /* AppDelegate.swift in Sources */,
@@ -589,6 +593,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,6 +623,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
