@@ -15,6 +15,7 @@ class MentoDetailViewController: UIViewController {
     @IBOutlet var mentoNameLabel: UILabel!
     @IBOutlet var mentoProfileImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ class MentoDetailViewController: UIViewController {
         }
         mentoNameLabel.text = mentoName
         subjectLabel.text = subject
+        tableViewHeight.constant = 132 * 4 + 10
     }
     
 
