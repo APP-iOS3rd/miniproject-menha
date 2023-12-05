@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,13 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="초대코드 생성" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6T9-LW-2KS">
-                                <rect key="frame" x="40" y="309" width="313" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuV-nf-lte">
-                                <rect key="frame" x="155" y="363" width="83" height="35"/>
+                                <rect key="frame" x="155" y="408.66666666666669" width="83" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="복사하기"/>
                             </button>
@@ -32,11 +28,16 @@
                                 <buttonConfiguration key="configuration" style="filled" title="완료"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="초대코드가 생성되었습니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rL9-ly-8lR" userLabel="알림창">
-                                <rect key="frame" x="64" y="259" width="265" height="30"/>
+                                <rect key="frame" x="64" y="304.66666666666669" width="265" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="초대코드 생성" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6T9-LW-2KS">
+                                <rect key="frame" x="40" y="354.66666666666669" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,12 +47,12 @@
                             <constraint firstItem="HuV-nf-lte" firstAttribute="top" secondItem="6T9-LW-2KS" secondAttribute="bottom" constant="20" id="Dlc-FX-rzM"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IUD-lL-NjS" secondAttribute="trailing" constant="50" id="EB3-Qo-yDY"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6T9-LW-2KS" secondAttribute="trailing" constant="40" id="Eyz-iP-FVI"/>
-                            <constraint firstItem="HuV-nf-lte" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="IbT-xe-6QW"/>
                             <constraint firstItem="IUD-lL-NjS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="LnK-5T-dNu"/>
                             <constraint firstItem="6T9-LW-2KS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="RSu-nt-iw0"/>
-                            <constraint firstItem="rL9-ly-8lR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="200" id="UPr-Ul-BgL"/>
+                            <constraint firstItem="HuV-nf-lte" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="YDZ-ua-efw"/>
                             <constraint firstItem="6T9-LW-2KS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ual-KY-m6C"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="IUD-lL-NjS" secondAttribute="bottom" constant="20" id="vpG-FM-zgL"/>
+                            <constraint firstItem="HuV-nf-lte" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wxL-rk-Q7n"/>
                         </constraints>
                     </view>
                 </viewController>

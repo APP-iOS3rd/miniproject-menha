@@ -17,24 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOe-UI-kjw">
-                                <rect key="frame" x="16" y="912" width="361" height="54"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="ZhE-ky-Mbk"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="등록"/>
-                                <connections>
-                                    <action selector="addSchedule:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bXt-Xn-oPB"/>
-                                </connections>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmQ-1L-73z">
-                                <rect key="frame" x="0.0" y="59" width="393" height="853"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="907"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqF-7g-2AJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="772.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="그룹명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1y-kB-asg">
                                                 <rect key="frame" x="16" y="15.999999999999998" width="361" height="20.333333333333329"/>
@@ -115,18 +102,32 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOe-UI-kjw">
+                                                <rect key="frame" x="16" y="712.66666666666663" width="361" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="nGG-gr-YRB"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="등록"/>
+                                                <connections>
+                                                    <action selector="addSchedule:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bXt-Xn-oPB"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="ZpG-ui-khS" firstAttribute="top" secondItem="sm9-nG-QQI" secondAttribute="bottom" constant="16" id="09p-p3-n9e"/>
+                                            <constraint firstItem="IOe-UI-kjw" firstAttribute="leading" secondItem="NqF-7g-2AJ" secondAttribute="leading" constant="16" id="0Ds-Hn-M4w"/>
                                             <constraint firstItem="che-cd-GR3" firstAttribute="top" secondItem="eFb-xc-ufS" secondAttribute="bottom" constant="16" id="2XS-Wn-U4f"/>
                                             <constraint firstItem="1qS-s5-MrD" firstAttribute="top" secondItem="p5h-H1-RuS" secondAttribute="bottom" constant="16" id="7aC-xD-Zb3"/>
-                                            <constraint firstAttribute="height" constant="1000" id="7yl-y2-Oql"/>
                                             <constraint firstAttribute="trailing" secondItem="eFb-xc-ufS" secondAttribute="trailing" constant="16" id="8M0-ko-FAk"/>
                                             <constraint firstItem="ZpG-ui-khS" firstAttribute="leading" secondItem="sm9-nG-QQI" secondAttribute="leading" id="BU5-2F-dm1"/>
                                             <constraint firstItem="NoJ-iX-r5y" firstAttribute="leading" secondItem="R1y-kB-asg" secondAttribute="leading" id="Bcc-as-JbR"/>
                                             <constraint firstItem="sm9-nG-QQI" firstAttribute="leading" secondItem="NqF-7g-2AJ" secondAttribute="leading" constant="16" id="Dui-jK-T28"/>
                                             <constraint firstItem="che-cd-GR3" firstAttribute="leading" secondItem="NqF-7g-2AJ" secondAttribute="leading" constant="16" id="EDV-w8-wrz"/>
+                                            <constraint firstItem="IOe-UI-kjw" firstAttribute="top" secondItem="che-cd-GR3" secondAttribute="bottom" constant="15" id="FhF-0d-JNY"/>
                                             <constraint firstAttribute="trailing" secondItem="R1y-kB-asg" secondAttribute="trailing" constant="16" id="GPl-nq-WLk"/>
                                             <constraint firstItem="Paf-en-B8j" firstAttribute="leading" secondItem="NqF-7g-2AJ" secondAttribute="leading" constant="16" id="IdU-Ys-6A7"/>
                                             <constraint firstItem="NoJ-iX-r5y" firstAttribute="trailing" secondItem="R1y-kB-asg" secondAttribute="trailing" id="JYn-cz-Tc5"/>
@@ -136,6 +137,7 @@
                                             <constraint firstItem="R1y-kB-asg" firstAttribute="top" secondItem="NqF-7g-2AJ" secondAttribute="top" constant="16" id="SIA-SN-g4T"/>
                                             <constraint firstItem="1qS-s5-MrD" firstAttribute="centerX" secondItem="NqF-7g-2AJ" secondAttribute="centerX" id="XGP-S5-bFG"/>
                                             <constraint firstAttribute="trailing" secondItem="p5h-H1-RuS" secondAttribute="trailing" constant="16" id="bNo-GB-BTc"/>
+                                            <constraint firstAttribute="bottom" secondItem="IOe-UI-kjw" secondAttribute="bottom" constant="20" id="cCo-wa-qqB"/>
                                             <constraint firstItem="NoJ-iX-r5y" firstAttribute="top" secondItem="R1y-kB-asg" secondAttribute="bottom" constant="16" id="cDy-nZ-aET"/>
                                             <constraint firstItem="eFb-xc-ufS" firstAttribute="leading" secondItem="NqF-7g-2AJ" secondAttribute="leading" constant="16" id="fNG-LG-8K1"/>
                                             <constraint firstItem="zgD-fP-itR" firstAttribute="top" secondItem="Paf-en-B8j" secondAttribute="bottom" constant="16" id="fWp-zZ-ZBE"/>
@@ -143,6 +145,7 @@
                                             <constraint firstItem="1qS-s5-MrD" firstAttribute="leading" secondItem="NqF-7g-2AJ" secondAttribute="leading" constant="16" id="hDa-gl-oSG"/>
                                             <constraint firstAttribute="trailing" secondItem="1qS-s5-MrD" secondAttribute="trailing" constant="16" id="iml-F5-h0g"/>
                                             <constraint firstAttribute="trailing" secondItem="che-cd-GR3" secondAttribute="trailing" constant="16" id="mgn-ts-cjh"/>
+                                            <constraint firstAttribute="trailing" secondItem="IOe-UI-kjw" secondAttribute="trailing" constant="16" id="oEI-PB-6fG"/>
                                             <constraint firstItem="Paf-en-B8j" firstAttribute="top" secondItem="1qS-s5-MrD" secondAttribute="bottom" constant="16" id="ob5-OB-lEy"/>
                                             <constraint firstItem="sm9-nG-QQI" firstAttribute="top" secondItem="NoJ-iX-r5y" secondAttribute="bottom" constant="16" id="puN-fj-MwH"/>
                                             <constraint firstItem="R1y-kB-asg" firstAttribute="leading" secondItem="NqF-7g-2AJ" secondAttribute="leading" constant="16" id="rmP-rO-NPC"/>
@@ -168,11 +171,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DmQ-1L-73z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BMZ-va-nxc"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IOe-UI-kjw" secondAttribute="trailing" constant="16" id="Dfh-TW-xxX"/>
                             <constraint firstItem="DmQ-1L-73z" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="W8O-Be-WSe"/>
-                            <constraint firstItem="IOe-UI-kjw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="WpC-Au-FNX"/>
-                            <constraint firstItem="IOe-UI-kjw" firstAttribute="top" secondItem="DmQ-1L-73z" secondAttribute="bottom" id="dGy-rT-IcO"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="IOe-UI-kjw" secondAttribute="bottom" id="mPJ-e2-Ncx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DmQ-1L-73z" secondAttribute="bottom" id="clu-Y6-lsI"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DmQ-1L-73z" secondAttribute="trailing" id="tti-rX-1ZL"/>
                         </constraints>
                     </view>
@@ -198,7 +198,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

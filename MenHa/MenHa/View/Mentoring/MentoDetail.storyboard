@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="1097"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRi-S1-r6t">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1105"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="908"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="멘토" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4b-eR-CnF">
                                                 <rect key="frame" x="25" y="15" width="29.666666666666671" height="21"/>
@@ -169,7 +169,6 @@
                                             <constraint firstItem="KWP-fe-4aR" firstAttribute="top" secondItem="F4b-eR-CnF" secondAttribute="bottom" constant="20" id="S2E-rX-ZTt"/>
                                             <constraint firstItem="t9g-aC-d7c" firstAttribute="centerY" secondItem="KWP-fe-4aR" secondAttribute="centerY" id="UKL-bB-j3Q"/>
                                             <constraint firstItem="F4b-eR-CnF" firstAttribute="top" secondItem="SRi-S1-r6t" secondAttribute="top" constant="15" id="Y7V-n4-fbX"/>
-                                            <constraint firstAttribute="height" constant="1105" id="ZHh-nC-vDE"/>
                                             <constraint firstItem="aq5-lj-z7T" firstAttribute="leading" secondItem="SRi-S1-r6t" secondAttribute="leading" id="ZSf-Zn-xuh"/>
                                             <constraint firstAttribute="trailing" secondItem="rZP-o9-vtD" secondAttribute="trailing" constant="20" id="a4l-F0-PL0"/>
                                             <constraint firstItem="aq5-lj-z7T" firstAttribute="top" secondItem="6jL-sk-mvh" secondAttribute="bottom" constant="15" id="bgK-eZ-c5I"/>
@@ -178,6 +177,7 @@
                                             <constraint firstItem="t9g-aC-d7c" firstAttribute="leading" secondItem="KWP-fe-4aR" secondAttribute="trailing" constant="50" id="hsL-sU-y7b"/>
                                             <constraint firstItem="mW3-oX-AHt" firstAttribute="centerX" secondItem="SRi-S1-r6t" secondAttribute="centerX" id="iK7-4r-BQF"/>
                                             <constraint firstAttribute="trailing" secondItem="aq5-lj-z7T" secondAttribute="trailing" id="s57-O6-UPm"/>
+                                            <constraint firstAttribute="bottom" secondItem="rZP-o9-vtD" secondAttribute="bottom" constant="20" id="uin-Lh-SWF"/>
                                             <constraint firstItem="rZP-o9-vtD" firstAttribute="top" secondItem="qF1-l0-dpe" secondAttribute="bottom" constant="30" id="yOO-MF-QmG"/>
                                             <constraint firstItem="rZP-o9-vtD" firstAttribute="leading" secondItem="SRi-S1-r6t" secondAttribute="leading" constant="20" id="ys3-zz-Je1"/>
                                         </constraints>
@@ -210,6 +210,7 @@
                         <outlet property="mentoProfileImage" destination="KWP-fe-4aR" id="N0n-hf-dGg"/>
                         <outlet property="subjectLabel" destination="XLe-kY-A2d" id="Ddg-wc-6RJ"/>
                         <outlet property="tableView" destination="aq5-lj-z7T" id="15C-Jg-h3u"/>
+                        <outlet property="tableViewHeight" destination="Vde-ph-7fz" id="Pjs-5F-vTV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,7 +241,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
