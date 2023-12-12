@@ -30,7 +30,6 @@
 		71C2A0892B0FC52B004ADFB9 /* ModifySchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */; };
 		71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08A2B0FC533004ADFB9 /* Login.storyboard */; };
 		71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C2A08C2B0FC537004ADFB9 /* Register.storyboard */; };
-		820A44CA2B1E2B4900A322AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 820A44C92B1E2B4900A322AC /* GoogleService-Info.plist */; };
 		823202F02B14ABAF00179A3A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202EF2B14ABAF00179A3A /* Schedule.swift */; };
 		823202F42B14C15700179A3A /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */; };
 		823202F82B14C85A00179A3A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823202F72B14C85A00179A3A /* DateHelper.swift */; };
@@ -44,6 +43,7 @@
 		8273973A2B10C8120033EC5D /* MenteeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827397392B10C8120033EC5D /* MenteeViewController.swift */; };
 		8294D52B2B1E5881002D3CD8 /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8294D52A2B1E5881002D3CD8 /* ScheduleService.swift */; };
 		99A969B11A6FB1AB8B5695DC /* Pods_MenHa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2857DF000C7867CB5117CBB1 /* Pods_MenHa.framework */; };
+		9DB14C092B28659200443F21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB14C082B28659200443F21 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +75,6 @@
 		71C2A0882B0FC52B004ADFB9 /* ModifySchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModifySchedule.storyboard; sourceTree = "<group>"; };
 		71C2A08A2B0FC533004ADFB9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		71C2A08C2B0FC537004ADFB9 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
-		820A44C92B1E2B4900A322AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		823202EF2B14ABAF00179A3A /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		823202F32B14C15700179A3A /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		823202F72B14C85A00179A3A /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		827397372B10C8010033EC5D /* Mentee.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mentee.storyboard; sourceTree = "<group>"; };
 		827397392B10C8120033EC5D /* MenteeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeViewController.swift; sourceTree = "<group>"; };
 		8294D52A2B1E5881002D3CD8 /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		9DB14C082B28659200443F21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 		71C2A0492B0FC336004ADFB9 = {
 			isa = PBXGroup;
 			children = (
-				820A44C92B1E2B4900A322AC /* GoogleService-Info.plist */,
+				9DB14C082B28659200443F21 /* GoogleService-Info.plist */,
 				71C2A0542B0FC336004ADFB9 /* MenHa */,
 				71C2A0532B0FC336004ADFB9 /* Products */,
 				7C4F105D22AD16A7CE55E63D /* Pods */,
@@ -358,7 +358,7 @@
 				71C2A05D2B0FC336004ADFB9 /* Main.storyboard in Resources */,
 				71C2A08B2B0FC533004ADFB9 /* Login.storyboard in Resources */,
 				71C2A08D2B0FC537004ADFB9 /* Register.storyboard in Resources */,
-				820A44CA2B1E2B4900A322AC /* GoogleService-Info.plist in Resources */,
+				9DB14C092B28659200443F21 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

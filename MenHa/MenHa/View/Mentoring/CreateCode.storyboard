@@ -21,6 +21,9 @@
                                 <rect key="frame" x="155" y="408.66666666666669" width="83" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="복사하기"/>
+                                <connections>
+                                    <action selector="shareInviteCode:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DwU-Zb-bRD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUD-lL-NjS">
                                 <rect key="frame" x="50" y="763" width="293" height="35"/>
@@ -55,6 +58,9 @@
                             <constraint firstItem="HuV-nf-lte" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wxL-rk-Q7n"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inviteCodeTextField" destination="6T9-LW-2KS" id="ctp-Qs-H8P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
